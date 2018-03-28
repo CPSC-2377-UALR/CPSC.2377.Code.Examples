@@ -1,0 +1,3 @@
+﻿  demoOverloadedOperators.cpp
+d:\google drive\teaching\cpsc 2377\code.examples\cpsc.2377.level.examples\l05s07.overloadedoperators\demooverloadedoperators.cpp(19): warning C4305: 'argument': truncation from 'double' to 'float'
+  L05S07.OverloadedOperators.vcxproj -> D:\Google Drive\Teaching\CPSC 2377\Code.Examples\CPSC.2377.Level.Examples\Debug\L05S07.OverloadedOperators.exe

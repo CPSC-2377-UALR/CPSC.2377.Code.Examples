@@ -1,0 +1,9 @@
+﻿  Vehicle.cpp
+  Truck.cpp
+d:\google drive\teaching\cpsc 2377\code.examples\cpsc.2377.level.examples\l06s02.polymorphism\truck.cpp(9): warning C4305: 'argument': truncation from 'double' to 'float'
+  Polymorphism.cpp
+  Plane.cpp
+d:\google drive\teaching\cpsc 2377\code.examples\cpsc.2377.level.examples\l06s02.polymorphism\plane.cpp(9): warning C4305: 'argument': truncation from 'double' to 'float'
+d:\google drive\teaching\cpsc 2377\code.examples\cpsc.2377.level.examples\l06s02.polymorphism\plane.cpp(11): warning C4305: '=': truncation from 'double' to 'float'
+  Generating Code...
+  L06S02.Polymorphism.vcxproj -> D:\Google Drive\Teaching\CPSC 2377\Code.Examples\CPSC.2377.Level.Examples\Debug\L06S02.Polymorphism.exe

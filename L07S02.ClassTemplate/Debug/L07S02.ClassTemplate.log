@@ -1,0 +1,4 @@
+﻿  classtemplates.cpp
+c:\users\star\google drive\teaching\cpsc 2377\code.examples\cpsc.2377.level.examples\l07s02.classtemplate\classtemplates.cpp(33): warning C4018: '<': signed/unsigned mismatch
+  L07S02.ClassTemplate.vcxproj -> C:\Users\star\Google Drive\Teaching\CPSC 2377\Code.Examples\CPSC.2377.Level.Examples\Debug\L07S02.ClassTemplate.exe
+  L07S02.ClassTemplate.vcxproj -> C:\Users\star\Google Drive\Teaching\CPSC 2377\Code.Examples\CPSC.2377.Level.Examples\Debug\L07S02.ClassTemplate.pdb (Full PDB)

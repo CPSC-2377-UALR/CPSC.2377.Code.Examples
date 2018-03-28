@@ -1,0 +1,5 @@
+﻿  SimpleSpaceShip.cpp
+d:\google drive\teaching\cpsc 2377\code.examples\cpsc.2377.level.examples\l05s06.constantmembers\simplespaceship.cpp(41): warning C4244: 'return': conversion from 'const int' to 'float', possible loss of data
+  demoConstantMembers.cpp
+  Generating Code...
+  L05S06.ConstantMembers.vcxproj -> D:\Google Drive\Teaching\CPSC 2377\Code.Examples\CPSC.2377.Level.Examples\Debug\L05S06.ConstantMembers.exe

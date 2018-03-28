@@ -1,0 +1,3 @@
+﻿  enum.cpp
+c:\users\administrator\google drive\teaching\cpsc 2377\code.examples\cpsc.2377.level.examples\l02s01.enum\enum.cpp(12): warning C4305: 'argument': truncation from 'double' to 'float'
+  L02S01.Enum.vcxproj -> C:\Users\Administrator\Google Drive\Teaching\CPSC 2377\Code.Examples\CPSC.2377.Level.Examples\Debug\L02S01.Enum.exe

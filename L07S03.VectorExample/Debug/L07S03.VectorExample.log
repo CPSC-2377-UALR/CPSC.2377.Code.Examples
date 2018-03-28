@@ -1,0 +1,5 @@
+﻿  vector.cpp
+c:\users\star\google drive\teaching\cpsc 2377\code.examples\cpsc.2377.level.examples\l07s03.vectorexample\vector.cpp(25): warning C4018: '<': signed/unsigned mismatch
+c:\users\star\google drive\teaching\cpsc 2377\code.examples\cpsc.2377.level.examples\l07s03.vectorexample\vector.cpp(34): warning C4018: '<': signed/unsigned mismatch
+  L07S03.VectorExample.vcxproj -> C:\Users\star\Google Drive\Teaching\CPSC 2377\Code.Examples\CPSC.2377.Level.Examples\Debug\L07S03.VectorExample.exe
+  L07S03.VectorExample.vcxproj -> C:\Users\star\Google Drive\Teaching\CPSC 2377\Code.Examples\CPSC.2377.Level.Examples\Debug\L07S03.VectorExample.pdb (Full PDB)
