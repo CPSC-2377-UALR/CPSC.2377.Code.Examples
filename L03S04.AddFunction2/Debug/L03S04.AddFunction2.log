@@ -1,3 +1,3 @@
 ﻿  addfunction2.cpp
 addfunction2.obj : error LNK2019: unresolved external symbol "int __cdecl addTwoNumbers(int,int)" (?addTwoNumbers@@YAHHH@Z) referenced in function _main
-C:\Users\Administrator\Google Drive\Teaching\CPSC 2377\Code.Examples\CPSC.2377.Level.Examples\Debug\L03S04.AddFunction2.exe : fatal error LNK1120: 1 unresolved externals
+C:\Users\Sean Orme\Google Drive\CPSC 2377\Code.Examples\CPSC.2377.Level.Examples\Debug\L03S04.AddFunction2.exe : fatal error LNK1120: 1 unresolved externals

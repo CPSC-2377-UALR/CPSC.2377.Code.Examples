@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2005
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "L02S01.Namespace", "L02S01.Namespace\L02S01.Namespace.vcxproj", "{E44148C5-52A4-4E2A-9195-E4B29332F360}"
 EndProject
@@ -77,7 +77,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "L05S08.StaticMembers", "L05
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "L06S01.InheritanceVehiclePlane", "L06S01.InheritanceVehicle\L06S01.InheritanceVehicle.vcxproj", "{6049192C-4801-4A83-9A94-C906D49BB68C}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "L06S01.InheritanceVehiclePlaneApplied", "L06S01.InheritanceVehicleA\L06S01.InheritanceVehicleA.vcxproj", "{21A1E110-372D-4357-8C43-4D4293787F38}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "L06S02.InheritanceVehiclePlaneApplied", "L06S01.InheritanceVehicleA\L06S01.InheritanceVehicleA.vcxproj", "{21A1E110-372D-4357-8C43-4D4293787F38}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "L06S02.NonPolymorphism", "L06S02.NonPolymorphism\L06S02.NonPolymorphism.vcxproj", "{32CA979D-AB94-496B-870B-078C1B95346E}"
 EndProject
@@ -116,6 +116,8 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "L09S04.ExceptionHandling", "L09S04.ExceptionHandling\L09S04.ExceptionHandling.vcxproj", "{61FF1115-09FF-439A-B45A-294ECC76A10C}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "L02S01.Enum", "L02S01.Enum\L02S01.Enum.vcxproj", "{9CEDE925-37EF-4D00-9BE4-95000B3F6F9D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "L08.S03 Observer Pattern", "L08.S03 Observer Pattern\L08.S03 Observer Pattern.vcxproj", "{5D9F2974-11A2-4D6C-8088-A9783A8A78EB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -581,8 +583,19 @@ Global
 		{9CEDE925-37EF-4D00-9BE4-95000B3F6F9D}.Release|x64.Build.0 = Release|x64
 		{9CEDE925-37EF-4D00-9BE4-95000B3F6F9D}.Release|x86.ActiveCfg = Release|Win32
 		{9CEDE925-37EF-4D00-9BE4-95000B3F6F9D}.Release|x86.Build.0 = Release|Win32
+		{5D9F2974-11A2-4D6C-8088-A9783A8A78EB}.Debug|x64.ActiveCfg = Debug|x64
+		{5D9F2974-11A2-4D6C-8088-A9783A8A78EB}.Debug|x64.Build.0 = Debug|x64
+		{5D9F2974-11A2-4D6C-8088-A9783A8A78EB}.Debug|x86.ActiveCfg = Debug|Win32
+		{5D9F2974-11A2-4D6C-8088-A9783A8A78EB}.Debug|x86.Build.0 = Debug|Win32
+		{5D9F2974-11A2-4D6C-8088-A9783A8A78EB}.Release|x64.ActiveCfg = Release|x64
+		{5D9F2974-11A2-4D6C-8088-A9783A8A78EB}.Release|x64.Build.0 = Release|x64
+		{5D9F2974-11A2-4D6C-8088-A9783A8A78EB}.Release|x86.ActiveCfg = Release|Win32
+		{5D9F2974-11A2-4D6C-8088-A9783A8A78EB}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4E170786-8394-4CEF-8EAD-9501329E5D69}
 	EndGlobalSection
 EndGlobal

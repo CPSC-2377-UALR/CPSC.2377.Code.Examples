@@ -24,6 +24,7 @@ void main(){
 	m["float"] = "type floating point";
 	m["foo"] = "bar";
 
+
 	/*
 	 * Lesson 1: Maps maintain an order over the keys and -> is overloaded
 	 *           for iterators
@@ -40,7 +41,7 @@ void main(){
 	cout << "Searching for int: " << endl;
 	if(m.find("int") != m.end()){
 		cout << "int is in the map." << endl;
-		cout << (*(m.find("int"))).second << endl;
+		cout << (m.find("int"))->second << endl;
 	}else{
 		cout << "int is not in the map." << endl;
 	}

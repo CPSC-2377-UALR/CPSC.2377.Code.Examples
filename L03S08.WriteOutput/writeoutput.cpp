@@ -25,7 +25,7 @@ int main(){
 		cout << "Enter the number of values of this set: ";
 		cin >> lineSize;
 		fout << lineSize << " ";
-
+		cout << lineSize << " ";
 		for(int j=0; j<lineSize; j++){
 			cout << "Enter the next number: ";
 			cin >> tmp;

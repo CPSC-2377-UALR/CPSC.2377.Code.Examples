@@ -17,7 +17,7 @@ using namespace std;
 
 int main(){
 	int maxVehicles = 20;
-	//Vehicle v;
+    //Vehicle* v = new Vehicle();
 
 	Vehicle** vArray = new Vehicle*[maxVehicles];
 

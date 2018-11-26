@@ -146,15 +146,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="BaseGameFactor.h" />
+    <ClInclude Include="BaseGameLibrary.h" />
     <ClInclude Include="Child1.h" />
     <ClInclude Include="Child1Factory.h" />
     <ClInclude Include="Child2.h" />
     <ClInclude Include="Child2Factory.h" />
     <ClInclude Include="Child3.h" />
     <ClInclude Include="Child3Factory.h" />
-    <ClInclude Include="GameFactory.h" />
-    <ClInclude Include="ModGameFactory.h" />
+    <ClInclude Include="GameLibrary.h" />
+    <ClInclude Include="ModGameLibrary.h" />
     <ClInclude Include="Object.h" />
     <ClInclude Include="ObjectFactory.h" />
   </ItemGroup>

@@ -16,7 +16,7 @@ using namespace std;
 void main(){
  
 	//Populate the vector with 1:4
-	list<int> c;
+	vector<int> c;
 	for(int i=1;i<=4;i++){
 		c.push_back(i);
 	}
@@ -24,18 +24,18 @@ void main(){
 	/*
 	 * Lesson 1: forward iteration 
 	 */
-	//vector<int>::iterator p;
-	//for(p=c.begin();p!=c.end();p++){
-	//	cout << *p << " ";
-	//}
+	vector<int>::iterator p;
+	for(p=c.begin();p!=c.end();p++){
+		cout << *p << " ";
+	}
 
-	//for(p=c.begin();p!=c.end();p++){
-	//	if((*p)%2==0){
-	//		cout << "insert: " << *p << endl;
-	//		p=c.insert(p,-1);
-	//		p++;
-	//	}
-	//}
+	for(p=c.begin();p!=c.end();p++){
+		if((*p)%2==0){
+			cout << "insert: " << *p << endl;
+			p=c.insert(p,-1);
+			p++;
+		}
+	}
 
 
 	//for(p=c.begin();p!=c.end();p++){
@@ -44,10 +44,10 @@ void main(){
 
 	///*lesson 2: the reverse iterator*/
 
-	/*deque<int>::reverse_iterator rp;
+	vector<int>::reverse_iterator rp;
 	for(rp=c.rbegin();rp!=c.rend();rp++){
 		cout << *rp << " ";
-	}cout << endl;*/
+	}cout << endl;
 
 	//Lesson 3: using Auto
 	for (auto p : c)

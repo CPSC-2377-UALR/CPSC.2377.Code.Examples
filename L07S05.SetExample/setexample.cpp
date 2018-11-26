@@ -24,7 +24,8 @@ void main(){
 	set<char>::iterator p;
 	for(p=s.begin();p!=s.end();p++){
 		cout << *p << " ";
-	}cout << endl;
+	}
+	cout << endl;
 
 	/*
 	 *Lesson 2: sets maintain uniqueness of elements
@@ -71,5 +72,6 @@ void main(){
 	if(s.find('x')!=s.end()){
 		cout << "Contains x" << endl;
 	}
+	
 	system("PAUSE");
 }

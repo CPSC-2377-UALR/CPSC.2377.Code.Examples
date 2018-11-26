@@ -8,7 +8,7 @@ using namespace std;
 
 class Vehicle{
 
-private:
+protected:
 
 	char* name;
 	float x;

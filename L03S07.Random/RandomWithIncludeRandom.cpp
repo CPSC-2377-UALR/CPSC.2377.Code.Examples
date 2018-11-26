@@ -4,23 +4,29 @@
 */
 
 #include <iostream>
-#include <ctime>
 #include <random>
 
 using namespace std;
 
 int main() {
+	/*
+		1. Seed
+		2. Engine
+		3. Distribution
+	*/
 	const int MAX_VALUE = 50;
-	std::random_device rdev;
-	static std::default_random_engine e(rdev());
-	//static std::default_random_engine e(12);
-	static std::uniform_int_distribution<int> ud(1, MAX_VALUE);
-	//static std::normal_distribution<double> nd(25.0,2.0); //(mean, standard deviation)
+	random_device seed;	
+	default_random_engine e(seed());
+	//default_random_engine e(13);
+	//uniform_int_distribution<int> ud(1, MAX_VALUE-1);
+	//normal_distribution<double> nd(25.0,2.0); //(mean, standard deviation)
+	bernoulli_distribution bd(.5);
 	int distribution[MAX_VALUE] = { 0 };
 	for (int i = 0; i < 10000; i++)
 	{
-		distribution[ud(e)]++;
+		//distribution[ud(e)]++;
 		//distribution[(int)nd(e)]++;
+		distribution[(int)bd(e)]++;
 		
 	}
 

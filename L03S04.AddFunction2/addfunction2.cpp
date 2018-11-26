@@ -5,7 +5,7 @@
 
 #include<iostream>
 
-using namespace std;
+//using namespace std;
 
 /* Function declaration*/
 int addTwoNumbers(int, int);
@@ -30,6 +30,6 @@ int main(){
 }
 
 /*Function definition*/
-//int addTwoNumbers(int num1, int num2){
-//	return(num1+num2);
-//}
+int addTwoNumbers(int num1, int num2){
+	return(num1+num2);
+}

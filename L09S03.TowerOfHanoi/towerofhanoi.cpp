@@ -22,6 +22,6 @@ void towerOfHanoi(int n, char A, char B, char C){
 }
 
 void main(){
-	towerOfHanoi(20, 'A', 'B', 'C');
+	towerOfHanoi(5, 'A', 'B', 'C');
 	system("PAUSE");
 }

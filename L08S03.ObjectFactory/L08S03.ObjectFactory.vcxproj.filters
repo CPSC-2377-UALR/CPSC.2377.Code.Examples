@@ -13,40 +13,46 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\Libraries">
+      <UniqueIdentifier>{e7e2b14c-e361-49aa-a012-8d0ebb9d7e3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Factories">
+      <UniqueIdentifier>{49961fb4-47fc-4d21-abe8-ddd63fbc5e4c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="BaseGameFactor.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Child1.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Child1Factory.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Child2.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Child2Factory.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Child3.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Child3Factory.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="GameFactory.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ModGameFactory.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Object.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="ModGameLibrary.h">
+      <Filter>Header Files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="GameLibrary.h">
+      <Filter>Header Files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseGameLibrary.h">
+      <Filter>Header Files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="Child1Factory.h">
+      <Filter>Header Files\Factories</Filter>
+    </ClInclude>
+    <ClInclude Include="Child2Factory.h">
+      <Filter>Header Files\Factories</Filter>
+    </ClInclude>
+    <ClInclude Include="Child3Factory.h">
+      <Filter>Header Files\Factories</Filter>
+    </ClInclude>
     <ClInclude Include="ObjectFactory.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Factories</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

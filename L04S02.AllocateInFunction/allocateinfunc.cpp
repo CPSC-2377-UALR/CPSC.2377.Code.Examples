@@ -57,14 +57,14 @@ void allocateInFunctionPtr(float** ma, int n){
 
 int main(){
 
-	float* myarray = NULL;
+	float* myarray = nullptr;
 	int size;
 	cout << "Enter an array size: ";
 	cin >> size;
 
-	allocateInFunction(myarray, size);
+	//allocateInFunction(myarray, size);
 	//allocateInFunctionRef(myarray, size);
-	//allocateInFunctionPtr(&myarray, size);
+	allocateInFunctionPtr(&myarray, size);
 
 
 	for(int i=0;i<size;i++){

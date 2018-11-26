@@ -8,10 +8,27 @@
 using namespace std;
 
 int main(){
-
-	for(int i=0; i<5; i++){
+	/*
+	1. Initializer
+	2. Conditional
+	3. What happens after each loop
+	*/
+	int numTimes = 0;
+	cin >> numTimes;
+	for(int i=0; i<=numTimes; i++)
+	{
+		
 		cout << i << endl;
-	}cout << endl;
+	}
+	
+	int i = 0;
+	while (i <= 5)
+	{
+		cout << i << endl;
+		i++;
+	}
+	
+	cout << endl;
 
 	system("PAUSE");
 

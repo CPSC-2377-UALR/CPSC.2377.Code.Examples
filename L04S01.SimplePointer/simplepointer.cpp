@@ -6,7 +6,7 @@ using namespace std;
 int main(){
 
 
-	int i = 5;//i[5]
+	int i = 5;//i[5] @ memory address 128adb83
 	
 	int* p; //p -->
 	p = &i;// p --> i

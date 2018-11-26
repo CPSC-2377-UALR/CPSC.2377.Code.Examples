@@ -43,15 +43,15 @@ void main(){
 	 * Lesson 2
 	 * Hidden fields can be accessed through scope resolution
 	 */
-	/*p.x = 3;
+	p.x = 3;
 	p.Vehicle::x = 6.7;
 	p.setY(8.6);
 	p.z = 9.5;
 
 	cout << v << endl;
-	cout << p << endl;*/
+	cout << p << endl;
 
-	//system("PAUSE");
+	system("PAUSE");
 
 	/*
 	* Lesson 3

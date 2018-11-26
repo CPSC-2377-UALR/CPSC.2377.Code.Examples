@@ -24,6 +24,12 @@ int main(){
 		}cout << endl; //return after each row finishes
 	}
 
+	for (int i = 0; i < n; i++)
+	{
+		delete[] array2D[i];
+	}
+	delete[] array2D;
+
 	system("PAUSE");
 
 	return 0;

@@ -15,7 +15,7 @@ public:
 	Plane();
 	~Plane();
 	
-	virtual void changePosition(char);
+	//void changePosition(char);
 	virtual string toString();
 
 

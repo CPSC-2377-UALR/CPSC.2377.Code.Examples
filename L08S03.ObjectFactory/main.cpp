@@ -3,7 +3,7 @@
 * Author: Keith Bush (2013)
 *
 * Purpose: Demonstrates an advanced use of the object factory design pattern
-*   an extensible mechanism for allowing objects to be added via the ModGameFactory class hook-in
+*   an extensible mechanism for allowing objects to be added via the ModGameLibrary class hook-in
 *   which facilitates minimal recompilation of the code.
 */
 
@@ -14,26 +14,25 @@
 #include <string>
 #include <memory>
 
-#include"GameFactory.h"
-#include"BaseGameFactor.h"
-#include"ModGameFactory.h"
+#include"GameLibrary.h"
+#include"BaseGameLibrary.h"
+#include"ModGameLibrary.h"
 
 using namespace std;
 
 int main(){
 
-	int N = 10;
+	const int N = 10;
 	
 	//Factory types
-	GameFactory* baseFactory = (GameFactory*)new BaseGameFactory(); //storeas an inventory of base ObjectFactories
-	GameFactory* modFactory = (GameFactory*)new ModGameFactory();  //stores inventory of modifed ObjectFactories (if they exist)
+	GameLibrary* baseLibrary = (GameLibrary*)new BaseGameLibrary(); //storeas an inventory of base ObjectFactories
+	GameLibrary* modLibrary = (GameLibrary*)new ModGameLibrary();  //stores inventory of modifed ObjectFactories (if they exist)
 
 	//Imagine that the game is dynamically calling for types
 	string objectType;
 
 	//Display utility of the object factory
-	vector<shared_ptr<Object>> objects;
-	vector<shared_ptr<Object>>::iterator objectsIter;
+	vector<Object*> objects;
 
 	for(int i=0;i<N;i++){
 
@@ -52,17 +51,16 @@ int main(){
 		}
 
 		cout << "TYPE: " << objectType << endl;
-		shared_ptr<Object> newObject(make_shared<Object>);
-		newObject->getNumber();
-
+		Object* newObject;
+		
 		//Search through the base classes
-		if(baseFactory->inventory.find(objectType) != baseFactory->inventory.end()){
-			newObject =	((*(baseFactory->inventory.find(objectType))).second)->create();
+		if(baseLibrary->inventory.find(objectType) != baseLibrary->inventory.end()){
+			newObject =	((*(baseLibrary->inventory.find(objectType))).second)->create();
 		}
 
 		//Search through the mod classes
-		if(modFactory->inventory.find(objectType)!= modFactory->inventory.end()){
-				newObject =	((*(modFactory->inventory.find(objectType))).second)->create();
+		if(modLibrary->inventory.find(objectType)!= modLibrary->inventory.end()){
+				newObject =	((*(modLibrary->inventory.find(objectType))).second)->create();
 		}
 
 		//Load the resultant object into the game space
@@ -73,8 +71,8 @@ int main(){
 	}
 
 	//Display the game space
-	for(objectsIter=objects.begin();objectsIter!=objects.end();objectsIter++){
-		cout << (*objectsIter)->getNumber()  << endl;
+	for(auto object : objects){
+		cout << object->getNumber()  << endl;
 	}
 
 	system("PAUSE");

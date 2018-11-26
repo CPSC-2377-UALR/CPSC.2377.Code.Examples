@@ -10,8 +10,8 @@ int addTwoNumbers(int, int);
 
 int main(){
 
-	int sum=0, n1=5, n2=7;
-	sum = addTwoNumbers(n1,n2);
+	int n1=5, n2=7;
+	int sum = addTwoNumbers(n1,n2);
 	cout << sum << endl;
 
 	system("PAUSE");
@@ -21,5 +21,6 @@ int main(){
 
 int addTwoNumbers(int num1, int num2){
 	int tmp = num1 + num2;
+	num1 = -89;
 	return(tmp);
 }

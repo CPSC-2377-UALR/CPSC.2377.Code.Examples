@@ -12,7 +12,7 @@ int main(){
 	int health;
 	cin >> health;
 	bool isTrue = true;
-	if(health == 0)
+	/*if(health == 0)
 	{
 		cout << "Fatality!" << endl;
 	}
@@ -26,16 +26,16 @@ int main(){
 		{
 			cout << "Fight!" << endl;
 		}
-	}
+	}*/
 
 	enum LIFE {DEAD, ALMOST_DEAD};
 
 	switch (health)
 	{
-	case DEAD:
+	case 0:
 		cout << "Fatality!" << endl;
 		break;
-	case ALMOST_DEAD:
+	case 1:
 		cout << "Finish him!" << endl;
 		//break;
 	default:

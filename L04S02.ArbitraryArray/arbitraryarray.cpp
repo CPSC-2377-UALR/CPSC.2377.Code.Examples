@@ -13,8 +13,10 @@ int main(){
 	cin >> n;
 	
 	/* Allocate the memory */
-	int* array = new int[n]; //array --> [][][][][][][][][][][][][]
-
+	int* array;
+	array = new int[n]; //array --> [][][][][][][][][][][][][]
+	int myArray[3];
+	
 	/* Initialize the memory with non-garbage values*/
 	for(int i=0;i<n;i++){
 		array[i] = 0;
