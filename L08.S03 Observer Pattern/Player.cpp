@@ -15,7 +15,8 @@ void Player::update(char command)
 	case 'h':
 		health += strength;
 	}
-	health-=2;
+	if(strength >1)
+		strength-=1;
 	notify();
 	if (enemiesToNotify.size() == 0)
 	{
@@ -30,7 +31,8 @@ void Player::attach(Enemy * enemy)
 
 void Player::detach(Enemy * enemy)
 {
-	if (auto toDelete = find(enemiesToNotify.begin(), enemiesToNotify.end(), enemy); toDelete != enemiesToNotify.end())
+	if (auto toDelete = find(enemiesToNotify.begin(), enemiesToNotify.end(), enemy); 
+	toDelete != enemiesToNotify.end())
 	{
 		enemiesToNotify.erase(toDelete);
 	}

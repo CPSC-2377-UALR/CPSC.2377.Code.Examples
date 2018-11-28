@@ -117,7 +117,9 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "L09S04.ExceptionHandling", 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "L02S01.Enum", "L02S01.Enum\L02S01.Enum.vcxproj", "{9CEDE925-37EF-4D00-9BE4-95000B3F6F9D}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "L08.S03 Observer Pattern", "L08.S03 Observer Pattern\L08.S03 Observer Pattern.vcxproj", "{5D9F2974-11A2-4D6C-8088-A9783A8A78EB}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "L08S03.ObserverPattern", "L08.S03 Observer Pattern\L08.S03 Observer Pattern.vcxproj", "{5D9F2974-11A2-4D6C-8088-A9783A8A78EB}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "L07S01.2.Decorator.Pattern", "L07S01.2.Decorator.Pattern\L07S01.2.Decorator.Pattern.vcxproj", "{DC1C917D-B8A1-443A-8889-164CC1920C84}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -591,6 +593,14 @@ Global
 		{5D9F2974-11A2-4D6C-8088-A9783A8A78EB}.Release|x64.Build.0 = Release|x64
 		{5D9F2974-11A2-4D6C-8088-A9783A8A78EB}.Release|x86.ActiveCfg = Release|Win32
 		{5D9F2974-11A2-4D6C-8088-A9783A8A78EB}.Release|x86.Build.0 = Release|Win32
+		{DC1C917D-B8A1-443A-8889-164CC1920C84}.Debug|x64.ActiveCfg = Debug|x64
+		{DC1C917D-B8A1-443A-8889-164CC1920C84}.Debug|x64.Build.0 = Debug|x64
+		{DC1C917D-B8A1-443A-8889-164CC1920C84}.Debug|x86.ActiveCfg = Debug|Win32
+		{DC1C917D-B8A1-443A-8889-164CC1920C84}.Debug|x86.Build.0 = Debug|Win32
+		{DC1C917D-B8A1-443A-8889-164CC1920C84}.Release|x64.ActiveCfg = Release|x64
+		{DC1C917D-B8A1-443A-8889-164CC1920C84}.Release|x64.Build.0 = Release|x64
+		{DC1C917D-B8A1-443A-8889-164CC1920C84}.Release|x86.ActiveCfg = Release|Win32
+		{DC1C917D-B8A1-443A-8889-164CC1920C84}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

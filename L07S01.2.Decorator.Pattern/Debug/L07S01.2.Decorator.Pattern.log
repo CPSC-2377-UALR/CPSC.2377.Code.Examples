@@ -1,0 +1,3 @@
+﻿  Decorator.Pattern.Source.cpp
+c:\users\ormeskirk\documents\github\cpsc.2377.code.examples\l07s01.2.decorator.pattern\decorator.pattern.source.cpp(70): warning C4715: 'chooseCoffeeType': not all control paths return a value
+  L07S01.2.Decorator.Pattern.vcxproj -> C:\Users\ormeskirk\Documents\GitHub\CPSC.2377.Code.Examples\Debug\L07S01.2.Decorator.Pattern.exe
