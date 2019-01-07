@@ -51,7 +51,7 @@ int main(){
 		}
 
 		cout << "TYPE: " << objectType << endl;
-		Object* newObject=nullptr;
+		Object* newObject{ nullptr };
 		
 		//Search through the base classes
 		if(baseLibrary->inventory.find(objectType) != baseLibrary->inventory.end()){

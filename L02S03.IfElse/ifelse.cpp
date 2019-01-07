@@ -1,8 +1,3 @@
-/*
- * File: ifelse.cpp
- * Author: Keith Bush (2013)
- */
-
 #include <iostream>
 
 using namespace std;
@@ -28,14 +23,14 @@ int main(){
 		}
 	}*/
 
-	enum LIFE {DEAD, ALMOST_DEAD};
+	enum class LIFE {DEAD, ALMOST_DEAD};
 
-	switch (health)
+	switch ((LIFE)health)
 	{
-	case 0:
+	case LIFE::DEAD:
 		cout << "Fatality!" << endl;
 		break;
-	case 1:
+	case LIFE::ALMOST_DEAD:
 		cout << "Finish him!" << endl;
 		//break;
 	default:

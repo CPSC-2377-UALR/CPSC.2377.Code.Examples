@@ -23,7 +23,6 @@
     <ProjectGuid>{5D9F2974-11A2-4D6C-8088-A9783A8A78EB}</ProjectGuid>
     <RootNamespace>L08S03ObserverPattern</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
-    <ProjectName>L08S03.ObserverPattern</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -119,7 +118,7 @@
   <ItemGroup>
     <ClCompile Include="Enemy.cpp" />
     <ClCompile Include="Player.cpp" />
-    <ClCompile Include="ObserverPatternSource.cpp" />
+    <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

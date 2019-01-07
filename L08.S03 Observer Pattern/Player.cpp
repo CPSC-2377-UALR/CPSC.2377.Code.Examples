@@ -15,8 +15,7 @@ void Player::update(char command)
 	case 'h':
 		health += strength;
 	}
-	if(strength >1)
-		strength-=1;
+	health-=2;
 	notify();
 	if (enemiesToNotify.size() == 0)
 	{

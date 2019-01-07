@@ -6,7 +6,7 @@ using namespace std;
 int main()
 {
 	int enemyHealth = 10;
-	enum ATTACK { MISS, HIT, CRITICAL_HIT, NUM_ATTACKS };
+	enum class Attack { Miss, Hit, CriticalHit, NumAttacks };
 	random_device rdev;
 	default_random_engine e(rdev());
 	normal_distribution<float> nd(1, .6);
@@ -14,23 +14,23 @@ int main()
 	while (enemyHealth > 0)
 	{
 		cout << "The enemy still has " << enemyHealth << " health! Keep Fighting! \n";
-		int attackRoll = (int)nd(e);
+		Attack attackRoll = (Attack)nd(e);
 
 		switch (attackRoll)
 		{
-		case MISS:
+		case Attack::Miss:
 			cout << "SWISH!" << endl;
 			break;
-		case CRITICAL_HIT:
+		case Attack::CriticalHit:
 			cout << "C-C-C-C-CRITICAL!" << endl;
 			enemyHealth -= 2;
 			break;
-		case HIT:
-			cout << "GOOD HIT!" << endl;
+		case Attack::Hit:
+			cout << "GOOD Hit!" << endl;
 			enemyHealth--;
 			break;
 		default:
-			cout << "DEATH HIT!" << endl;
+			cout << "DEATH Hit!" << endl;
 			enemyHealth = 0;
 		}
 		

@@ -8,19 +8,19 @@
 using namespace std;
 
 int main(){
-	//const int sumTotal = 1000;
-	//int sum = 2000;
-	//int count = 1;
+	const int sumTotal = 1000;
+	int sum = 2000;
+	int count = 1;
 
-	//while(sum < sumTotal){
-	//	sum += count;
-	//	count ++;
-	//}
-	//cout << endl;
+	while(sum < sumTotal){
+		sum += count;
+		count ++;
+	}
+	cout << endl;
 
-	//count--;
-	//cout << "The lowest consecutive possitive integers\nthat add up to a value greater than " << sumTotal << " are 1 through " << count << endl;
-	//
+	count--;
+	cout << "The lowest consecutive possitive integers\nthat add up to a value greater than " << sumTotal << " are 1 through " << count << endl;
+	
 
 	
 	{

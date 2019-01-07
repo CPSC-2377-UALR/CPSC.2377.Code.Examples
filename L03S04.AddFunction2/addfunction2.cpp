@@ -5,7 +5,7 @@
 
 #include<iostream>
 
-//using namespace std;
+using namespace std;
 
 /* Function declaration*/
 int addTwoNumbers(int, int);
