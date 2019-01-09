@@ -1,11 +1,4 @@
-﻿  Car.cpp
-d:\google drive\teaching\cpsc 2377\code.examples\cpsc.2377.level.examples\l06s03.abstractclassapplied\car.cpp(9): warning C4305: 'argument': truncation from 'double' to 'float'
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (L06S03.AbstractClassApplied.vcxproj).  This can lead to incorrect clean and rebuild behavior.
   AbstractClassApplied.cpp
-  Generating Code...
-  Compiling...
-  Vehicle.cpp
-  Plane.cpp
-d:\google drive\teaching\cpsc 2377\code.examples\cpsc.2377.level.examples\l06s03.abstractclassapplied\plane.cpp(9): warning C4305: 'argument': truncation from 'double' to 'float'
-d:\google drive\teaching\cpsc 2377\code.examples\cpsc.2377.level.examples\l06s03.abstractclassapplied\plane.cpp(11): warning C4305: '=': truncation from 'double' to 'float'
-  Generating Code...
-  L06S03.AbstractClassApplied.vcxproj -> D:\Google Drive\Teaching\CPSC 2377\Code.Examples\CPSC.2377.Level.Examples\Debug\L06S03.AbstractClassApplied.exe
+  L06S03.AbstractClassApplied.vcxproj -> C:\Users\ormeskirk\Documents\GitHub\CPSC.2377.Code.Examples\Debug\L05S02.3.Inheritance.Abstract.Class.exe
+  L06S03.AbstractClassApplied.vcxproj -> C:\Users\ormeskirk\Documents\GitHub\CPSC.2377.Code.Examples\Debug\L05S02.3.Inheritance.Abstract.Class.pdb (Full PDB)

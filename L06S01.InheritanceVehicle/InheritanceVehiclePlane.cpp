@@ -6,6 +6,7 @@
  * Purpose:  demonstrates a simple inheritance hierarchy comprised of Vehicle (parent) and Plane (child)
  */
 #include<iostream>
+#include <vector>
 #include "Vehicle.h"
 #include "Plane.h"
 
@@ -44,9 +45,9 @@ void main(){
 	 * Hidden fields can be accessed through scope resolution
 	 */
 	p.x = 3;
-	p.Vehicle::x = 6.7;
-	p.setY(8.6);
-	p.z = 9.5;
+	p.Vehicle::x = 6.7f;
+	p.setY(8.6f);
+	p.z = 9.5f;
 
 	cout << v << endl;
 	cout << p << endl;
@@ -55,19 +56,27 @@ void main(){
 
 	/*
 	* Lesson 3
-	* Parent pointers can point to child instances
+	* Parent references can refer to child instances
 	*/
+	Vehicle& vRef = p;
+	vRef.setX(-20);
 
-	////Typical set-up
-	Vehicle* vptr = &v;
-	vptr->setX(-20);
+	cout << vRef <<endl;
 
-	cout << *vptr <<endl;
+	/*
+	* Lesson 4: this causes the child to lose it's "uniquness"
+	*
+	*/
+	cout << vRef.x << endl;
+	//vRef.z;
+	//cast it a reference to the child to access the child exclusive bits.
+	((Plane&)vRef).z;
 
-	//Wow!!!  This is powerful!
-	vptr = &p;
+	//Lesson 5: can't create arrays or vecotrs of references;
+
+	//Vehicle& militaryRef[10];
+	vector<Vehicle&> militaryVec;
+	militaryVec.push_back(p); //<-- compile time error! references are not copyable!
 	
-	cout << *vptr << endl;
-
 	system("PAUSE");	
 }

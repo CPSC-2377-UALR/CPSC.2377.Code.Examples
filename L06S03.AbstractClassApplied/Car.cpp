@@ -5,8 +5,7 @@
 using namespace std;
 
 Car::Car(){ /*Default Constructor of Vehicle is called*/
-	setX(3.0);
-	setY(3.1);
+	setPosition({ 3.0f, 3.1f });
 	honk = false;
 	setName("Car");
 }

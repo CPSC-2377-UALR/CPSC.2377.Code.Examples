@@ -1,52 +1,41 @@
 #include <iostream>
 #include <string>
 #include <sstream>
-
 #include "Vehicle.h"
 
 using namespace std;
 
 
-Vehicle::Vehicle(){
-	x = 0.0;
-	y = 0.0;
-	name = new char[8];
-	strcpy_s(name,8,"Vehicle");
+Vehicle::Vehicle() :position{ 0,0 }, name{ "Vehicle" }{}
+
+Vehicle::~Vehicle() {}
+
+void Vehicle::setPosition(Coordinate position)
+{
+	this->position = position;
 }
 
-Vehicle::~Vehicle(){
-	delete name;
+void Vehicle::setName(string name) 
+{
+	this->name = name;
 }
 
-void Vehicle::setX(float pX){
-	x = pX;
-}
-
-void Vehicle::setY(float pY){
-	y = pY;
-}
-
-void Vehicle::setName(char* pName){
-	delete [] name;
-	name = new char[strlen(pName)+1];
-	strcpy_s(name,strlen(pName)+1,pName);
-}
-
-float Vehicle::getX(){
-	return(x);
+Coordinate Vehicle::getPosition() const
+{
+	return(position);
 }
 	
-float Vehicle::getY(){
-	return(y);
-}
 
-char* Vehicle::getName(){
+
+string Vehicle::getName()
+{
 	return(name);
 }
 
+
 string Vehicle::toString(){
 	stringstream result;
-	result << "(Vehicle Object, " << name << ": x=" << x << ", y=" << y << ")";
+	result << "(Vehicle Object, " << name << ": x=" << position.x << ", y=" << position.y << ")";
 	return(result.str());
 }
 
@@ -54,16 +43,16 @@ void Vehicle::changePosition(char command){
 
 	switch(command){
 	case 'l':
-		x--;
+		position.x--;
 		break;
 	case 'r':
-		x++;
+		position.x++;
 		break;
 	case 'f':
-		y++;
+		position.y++;
 		break;
 	case 'b':
-		y--;
+		position.y--;
 		break;
 	default:
 		break;

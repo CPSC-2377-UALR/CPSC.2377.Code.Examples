@@ -15,25 +15,26 @@ int main(){
 
 	int numSteps = 10;
 
-	Vehicle* v = new Plane;
+	Vehicle& v = Plane();
 
 	//Wrong!!! The Vehicle's toString() method is called
-	cout << v->toString() << endl;
+	cout << v.toString() << endl;
 
-	system("PAUSE");
-	for(int i=0;i<numSteps;i++){
-		
+	
+	for (int i = 0; i < numSteps; i++)
+	{
+
 		char command;
 		cout << "Input a command: ";
 		cin >> command;
 
 		//Wrong!!! The Vehicle's changePosition() method is called
-		v->changePosition(command);
+		v.changePosition(command);
 
-		cout << v->toString() << endl;
+		cout << v.toString() << endl;
 
 	}
-	
+	system("PAUSE");
 	return 0;
 
 }

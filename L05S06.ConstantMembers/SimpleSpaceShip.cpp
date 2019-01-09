@@ -1,64 +1,95 @@
 /*
- * File: SimpleSpaceShip.cpp
- * Author: Keith Bush (2012)
- */
+* File: SimpleSpaceShip.cpp
+* Author: Keith Bush (2012)
+*/
 #include <iostream>
 #include "SimpleSpaceShip.h"
 
 using namespace std;
 
-SimpleSpaceShip::SimpleSpaceShip() : shield(10)
+SimpleSpaceShip::SimpleSpaceShip()
 {
-    x = 0.0;
-	y = 0.0;
+	name += "_default";
+	cout << "Default Constructor Called, " << name << endl;
+}
+
+SimpleSpaceShip::SimpleSpaceShip(Coordinates position, int fuel, int shield, std::string name) 
+	:shield{ shield }, position{ position }, fuel{ fuel }
+{
+	this->name = name + "_conversion";
+
+	cout << "Conversion Constructor Called, " << name << endl;
+}
+
+SimpleSpaceShip::SimpleSpaceShip(const SimpleSpaceShip & src) : shield{ src.shield }
+{
+	position = src.position;
+	fuel = src.fuel;
+	name = src.name + "_copy";
+
+	cout << "Copy Constructor Called, " << name << endl;
+}
+
+SimpleSpaceShip::SimpleSpaceShip(SimpleSpaceShip && src) : shield{ src.shield }
+{
+	//1. release my resouces
+	position = { 0.0f, 0.0f };
 	fuel = 0;
-	name = NULL;
-	setName("Enterprise");
+	name = " ";
+
+	//2. Steal resources from src.
+	position = src.position;
+	fuel = src.fuel;
+	name = src.name + "_move";
+
+	//3. kill off src resources.
+	src.position = { 0.0f, 0.0f };
+	src.fuel = 0.0f;
+	src.name = " ";
+
+	//Move constructor becomes less trivial when we learn about pointers! stay tuned!!
+	cout << "Move Constructor Called, " << name << endl;
+
 }
 
-SimpleSpaceShip::SimpleSpaceShip(float x, float y, int fuel, int SHIELD) : shield(SHIELD){
-	this->x = x;
-	this->y = y;
-	this->fuel = fuel;
-	name = NULL;
-	setName("Enterprise");
-}
-
-SimpleSpaceShip::~SimpleSpaceShip(){
-	delete [] name;
-}
-
-float SimpleSpaceShip::getX() const{
-	return(x);
-}
-
-float SimpleSpaceShip::getY() const{
-	return(y);
-}
-
-float SimpleSpaceShip::getShield() const
+SimpleSpaceShip::~SimpleSpaceShip()
 {
-	return(shield);
+	cout << name << " is being destroyed" << endl;
 }
 
-
-void SimpleSpaceShip::setX(float x){
-	this->x = x;
+Coordinates SimpleSpaceShip::getPosition() const
+{
+	return position;
 }
 
-
-void SimpleSpaceShip::setY(float y){
-	this->y = y;
+int SimpleSpaceShip::getShieldStrength() const
+{
+	return shield;
 }
 
-void SimpleSpaceShip::setName(char* name){
-	if(this->name!=NULL){
-		delete [] this->name;
+void SimpleSpaceShip::setPosition(Coordinates position)
+{
+	this->position = position;
+}
+
+void SimpleSpaceShip::setName(string name)
+{
+	this->name = name;
+}
+
+void SimpleSpaceShip::print() const {
+	cout << name << ", Position: (" << position.x << ", " << position.y << ", " << fuel << ")" << endl;
+}
+
+SimpleSpaceShip & SimpleSpaceShip::operator=(const SimpleSpaceShip & src)
+{
+	if (this == &src)
+	{
+		return *this;
 	}
-	this->name = new char[strlen(name)+1];
-	strcpy_s(this->name,strlen(name)+1,name);
-}
 
-void SimpleSpaceShip::print() const{		
-	cout << name << ", Position: (" << x << ", " << y << ", " << fuel << ", " << shield << ")" << endl;
+	position = src.position;
+	fuel = src.fuel;
+	name = src.name + "_copyAssignment";
+	return *this;
 }

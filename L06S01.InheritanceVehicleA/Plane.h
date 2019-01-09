@@ -6,16 +6,18 @@
 
 using namespace std;
 
-class Plane: public Vehicle{
+class Plane : public Vehicle {
 
 private:
 	float z;
 
-public: 
+public:
 	Plane();
 	~Plane();
-	void changePosition(char);
-	string toString();
+
+	void changePosition(char) override;
+	string toString() override;
+
 
 };
 

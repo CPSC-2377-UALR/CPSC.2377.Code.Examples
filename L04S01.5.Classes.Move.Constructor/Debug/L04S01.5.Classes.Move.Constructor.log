@@ -1,0 +1,3 @@
+﻿  SimpleSpaceShip.cpp
+c:\users\ormeskirk\documents\github\cpsc.2377.code.examples\l04s01.5.classes.move.constructor\simplespaceship.cpp(51): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+  L04S01.5.Classes.Move.Constructor.vcxproj -> C:\Users\ormeskirk\Documents\GitHub\CPSC.2377.Code.Examples\Debug\L04S01.5.Classes.Move.Constructor.exe

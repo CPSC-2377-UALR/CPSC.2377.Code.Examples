@@ -1,10 +1,4 @@
-﻿  Vehicle.cpp
-  Truck.cpp
-c:\users\sean orme\google drive\cpsc 2377\code.examples\cpsc.2377.level.examples\l06s02.nonpolymorphism\truck.cpp(9): warning C4305: 'argument': truncation from 'double' to 'float'
-  Plane.cpp
-c:\users\sean orme\google drive\cpsc 2377\code.examples\cpsc.2377.level.examples\l06s02.nonpolymorphism\plane.cpp(9): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\sean orme\google drive\cpsc 2377\code.examples\cpsc.2377.level.examples\l06s02.nonpolymorphism\plane.cpp(11): warning C4305: '=': truncation from 'double' to 'float'
-  Nonpolymorphism.cpp
-  Generating Code...
-  L06S02.NonPolymorphism.vcxproj -> C:\Users\Sean Orme\Google Drive\CPSC 2377\Code.Examples\CPSC.2377.Level.Examples\Debug\L06S02.NonPolymorphism.exe
-  L06S02.NonPolymorphism.vcxproj -> C:\Users\Sean Orme\Google Drive\CPSC 2377\Code.Examples\CPSC.2377.Level.Examples\Debug\L06S02.NonPolymorphism.pdb (Full PDB)
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (L06S02.NonPolymorphism.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  Vehicle.cpp
+  L06S02.NonPolymorphism.vcxproj -> C:\Users\ormeskirk\Documents\GitHub\CPSC.2377.Code.Examples\Debug\L05S02.1.Inheritance.NonPolymorphism.exe
+  L06S02.NonPolymorphism.vcxproj -> C:\Users\ormeskirk\Documents\GitHub\CPSC.2377.Code.Examples\Debug\L05S02.1.Inheritance.NonPolymorphism.pdb (Full PDB)

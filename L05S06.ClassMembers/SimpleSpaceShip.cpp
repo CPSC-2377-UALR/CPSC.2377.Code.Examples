@@ -1,66 +1,117 @@
 /*
- * File: SimpleSpaceShip.cpp
- * Author: Keith Bush (2012)
- */
+* File: SimpleSpaceShip.cpp
+* Author: Keith Bush (2012)
+*/
 #include <iostream>
 #include "SimpleSpaceShip.h"
-#include "Shield.h"
 
 using namespace std;
 
-SimpleSpaceShip::SimpleSpaceShip():frontShield(),rearShield(){
-	x = 0.0f;
-	y = 0.0f;
+SimpleSpaceShip::SimpleSpaceShip()
+{
+	name += "_default";
+	cout << "Default Constructor Called, " << name << endl;
+}
+
+SimpleSpaceShip::SimpleSpaceShip(Coordinates position, int fuel, int frontShield, int rearShield, std::string name)
+	:frontShield{ frontShield }, rearShield{ rearShield }, position{ position }, fuel{ fuel }
+{
+	this->name = name + "_conversion";
+
+	cout << "Conversion Constructor Called, " << name << endl;
+}
+
+SimpleSpaceShip::SimpleSpaceShip(const SimpleSpaceShip & src) 
+	: frontShield{ src.frontShield }, rearShield{ src.rearShield }
+{
+	position = src.position;
+	fuel = src.fuel;
+	name = src.name + "_copy";
+
+	cout << "Copy Constructor Called, " << name << endl;
+}
+
+SimpleSpaceShip::SimpleSpaceShip(SimpleSpaceShip && src) 
+	: frontShield{ src.frontShield }, rearShield{ src.rearShield }
+{
+	//1. release my resouces
+	position = { 0.0f, 0.0f };
 	fuel = 0;
-	name = NULL;
-	setName("Enterprise");
+	name = " ";
+
+	//2. Steal resources from src.
+	position = src.position;
+	fuel = src.fuel;
+	name = src.name + "_move";
+
+	//3. kill off src resources.
+	src.position = { 0.0f, 0.0f };
+	src.fuel = 0.0f;
+	src.name = " ";
+
+	//Move constructor becomes less trivial when we learn about pointers! stay tuned!!
+	cout << "Move Constructor Called, " << name << endl;
+
 }
 
-SimpleSpaceShip::SimpleSpaceShip(float x, float y, int fuel, int frontShield, int rearShield):frontShield(frontShield),rearShield(rearShield){
-	this->x = x;
-	this->y = y;
-	this->fuel = fuel;
-	name = NULL;
-	setName("Enterprise");
+SimpleSpaceShip::~SimpleSpaceShip()
+{
+	cout << name << " is being destroyed" << endl;
 }
 
-SimpleSpaceShip::~SimpleSpaceShip(){
-	delete [] name;
+Coordinates SimpleSpaceShip::getPosition() const
+{
+	return position;
 }
 
-float SimpleSpaceShip::getX() const{
-	return(x);
+int SimpleSpaceShip::getFrontShieldStrength() const
+{
+	return frontShield.getStrength();
 }
 
-float SimpleSpaceShip::getY() const{
-	return(y);
+int SimpleSpaceShip::getRearShieldStrength() const
+{
+	return rearShield.getStrength();
 }
 
 
-void SimpleSpaceShip::setX(float paramX){
-	if(paramX>0){
-	x = paramX;
-	}else{
-		x=0;
-	}
+
+void SimpleSpaceShip::setPosition(Coordinates position)
+{
+	this->position = position;
 }
 
-void SimpleSpaceShip::setY(float paramY){
-	y = paramY;
+void SimpleSpaceShip::setName(string name)
+{
+	this->name = name;
 }
 
-void SimpleSpaceShip::setFrontShield(int strength){
+void SimpleSpaceShip::setFrontShieldStrength(int strength)
+{
 	frontShield.setStrength(strength);
 }
 
-void SimpleSpaceShip::setName(char* paramName){
-	if(name!=NULL){
-		delete [] name;
-	}
-	name = new char[strlen(paramName)+1];
-	strcpy_s(name,strlen(paramName)+1,paramName);
+void SimpleSpaceShip::setRearShiledStrength(int strength)
+{
+	rearShield.setStrength(strength);
+
 }
 
-void SimpleSpaceShip::print() const{		
-	cout << name << ", Position: (" << x << ", " << y << ", " << fuel << ", FS=" << frontShield.getStrength() << ", RS=" << rearShield.getStrength() << ")" <<  endl;
+void SimpleSpaceShip::print() const {
+	cout << name << ", Position: (" << position.x << ", " << position.y << ", " << fuel << ")" << endl;
+}
+
+SimpleSpaceShip & SimpleSpaceShip::operator=(const SimpleSpaceShip & src)
+{
+	if (this == &src)
+	{
+		return *this;
+	}
+
+	position = src.position;
+	fuel = src.fuel;
+	frontShield.setStrength(src.frontShield.getStrength());
+	rearShield.setStrength(src.rearShield.getStrength());
+	name = src.name + "_copyAssignment";
+	return *this;
 }

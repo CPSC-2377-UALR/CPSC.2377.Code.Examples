@@ -6,15 +6,18 @@
 
 using namespace std;
 
-class Boat: public Vehicle{
+class Boat : public Vehicle {
 
 private:
 	float z;
 
-public: 
+public:
 	Boat();
-	void changePosition(char);
-	string toString();
+	~Boat();
+
+	void changePosition(char) override;
+	string toString() override;
+
 
 };
 

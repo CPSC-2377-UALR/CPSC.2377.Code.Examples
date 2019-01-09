@@ -1,3 +1,4 @@
-﻿  demoOverloadedOperators.cpp
-d:\google drive\teaching\cpsc 2377\code.examples\cpsc.2377.level.examples\l05s07.overloadedoperators\demooverloadedoperators.cpp(19): warning C4305: 'argument': truncation from 'double' to 'float'
-  L05S07.OverloadedOperators.vcxproj -> D:\Google Drive\Teaching\CPSC 2377\Code.Examples\CPSC.2377.Level.Examples\Debug\L05S07.OverloadedOperators.exe
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (L05S07.OverloadedOperators.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  SimpleSpaceShip.cpp
+  L05S07.OverloadedOperators.vcxproj -> C:\Users\ormeskirk\Documents\GitHub\CPSC.2377.Code.Examples\Debug\L04S02.3.OverloadedOperators.exe
+  L05S07.OverloadedOperators.vcxproj -> C:\Users\ormeskirk\Documents\GitHub\CPSC.2377.Code.Examples\Debug\L04S02.3.OverloadedOperators.pdb (Full PDB)

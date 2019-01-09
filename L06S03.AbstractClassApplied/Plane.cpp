@@ -4,18 +4,16 @@
 
 using namespace std;
 
-Plane::Plane(){ /*Default Constructor of Vehicle is called*/
-	setX(2.0);
-	setY(2.1);
+Plane::Plane() { /*Default Constructor of Vehicle is called*/
+	setPosition({ 2.0f, 2.1f });
 	setName("Plane");
 	z = 2.2;
 }
 
-Plane::~Plane(){
+Plane::~Plane() {
 }
 
-
-string Plane::toString(){
+string Plane::toString() {
 
 	stringstream result;
 
@@ -24,9 +22,9 @@ string Plane::toString(){
 	return(result.str());
 }
 
-void Plane::changePosition(char command){
+void Plane::changePosition(char command) {
 
-	switch(command){
+	switch (command) {
 	case 'u':
 		z++;
 		break;

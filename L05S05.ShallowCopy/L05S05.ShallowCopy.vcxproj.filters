@@ -24,12 +24,18 @@
     <ClCompile Include="SimpleSpaceShip.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Shield.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ShallowSpaceShip.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="SimpleSpaceShip.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Shield.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

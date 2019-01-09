@@ -1,65 +1,130 @@
 /*
- * File: ShallowSpaceShip.cpp
- * Author: Keith Bush (2012)
- */
+* File: ShallowSpaceShip.cpp
+* Author: Keith Bush (2012)
+*/
 #include <iostream>
 #include "ShallowSpaceShip.h"
 
 using namespace std;
 
-ShallowSpaceShip::ShallowSpaceShip(){
-	x = 0.0;
-	y = 0.0;
-	fuel = 0;
-	name = NULL;
-	setName("Enterprise");
+ShallowSpaceShip::ShallowSpaceShip()
+{
+	this->frontShield = new Shield();
+	this->rearShield = new Shield();
+
+	name += "_default";
+	cout << "Default Constructor Called, " << name << endl;
 }
 
-ShallowSpaceShip::ShallowSpaceShip(float x, float y, int fuel){
-	this->x = x;
-	this->y = y;
-	this->fuel = fuel;
-	name = NULL;
-	setName("Enterprise");
+ShallowSpaceShip::ShallowSpaceShip(Coordinates position, int fuel, int frontShield, int rearShield, std::string name)
+	:position{ position }, fuel{ fuel }
+{
+	this->frontShield = new Shield(frontShield);
+	this->rearShield = new Shield(rearShield);
+
+	this->name = name + "_conversion";
+
+	cout << "Conversion Constructor Called, " << name << endl;
 }
 
-ShallowSpaceShip::ShallowSpaceShip(const ShallowSpaceShip & src){
-	x = src.x;
-	y = src.y;
+ShallowSpaceShip::ShallowSpaceShip(const ShallowSpaceShip & src)
+	: frontShield{ src.frontShield }, rearShield{ src.rearShield }//<--HERE'S THE PROBLEM!!!
+{
+	position = src.position;
 	fuel = src.fuel;
-	name = src.name;
+	name = src.name + "_copy";
+
+	cout << "Copy Constructor Called, " << name << endl;
 }
 
-ShallowSpaceShip::~ShallowSpaceShip(){
-	delete [] name;
+ShallowSpaceShip::ShallowSpaceShip(ShallowSpaceShip && src)
+	: frontShield{ src.frontShield }, rearShield{ src.rearShield }
+{
+	//1. release my resouces
+	position = { 0.0f, 0.0f };
+	fuel = 0;
+	name = " ";
+	delete frontShield;
+	delete rearShield;
+
+	//2. Steal resources from src.
+	position = src.position;
+	fuel = src.fuel;
+	name = src.name + "_move";
+	frontShield = src.frontShield;
+	rearShield = src.rearShield;
+
+	//3. kill off src resources.
+	src.position = { 0.0f, 0.0f };
+	src.fuel = 0.0f;
+	src.name = " ";
+	src.frontShield = nullptr;
+	src.rearShield = nullptr;
+
+	cout << "Move Constructor Called, " << name << endl;
+
 }
 
-float ShallowSpaceShip::getX() const{
-	return(x);
+ShallowSpaceShip::~ShallowSpaceShip()
+{
+	delete frontShield;
+	delete rearShield;
+	cout << name << " is being destroyed" << endl;
 }
 
-float ShallowSpaceShip::getY() const{
-	return(y);
+Coordinates ShallowSpaceShip::getPosition() const
+{
+	return position;
+}
+
+int ShallowSpaceShip::getFrontShieldStrength() const
+{
+	return frontShield->getStrength();
+}
+
+int ShallowSpaceShip::getRearShieldStrength() const
+{
+	return rearShield->getStrength();
 }
 
 
-void ShallowSpaceShip::setX(float x){
-	this->x = x;
+
+void ShallowSpaceShip::setPosition(Coordinates position)
+{
+	this->position = position;
 }
 
-
-void ShallowSpaceShip::setY(float y){
-	this->y = y;
+void ShallowSpaceShip::setName(string name)
+{
+	this->name = name;
 }
 
-void ShallowSpaceShip::setName(char* name){
-	if(this->name!=NULL){
-		delete [] this->name;
+void ShallowSpaceShip::setFrontShieldStrength(int strength)
+{
+	frontShield->setStrength(strength);
+}
+
+void ShallowSpaceShip::setRearShiledStrength(int strength)
+{
+	rearShield->setStrength(strength);
+
+}
+
+void ShallowSpaceShip::print() const {
+	cout << name << ", Position: (" << position.x << ", " << position.y << ")" << " F: " << fuel << " RS: " << rearShield->getStrength() << " FS: " << frontShield->getStrength() << endl;
+}
+
+ShallowSpaceShip & ShallowSpaceShip::operator=(const ShallowSpaceShip & src)
+{
+	if (this == &src)
+	{
+		return *this;
 	}
-	this->name = new char[strlen(name)+1];
-	strcpy_s(this->name,strlen(name)+1,name);
-}
 
-void ShallowSpaceShip::print() const{		
-	cout << name << ", Position: (" << x << ", " << y << ", " << fuel << ")" << endl;
+	position = src.position;
+	fuel = src.fuel;
+	frontShield->setStrength(src.frontShield->getStrength());
+	rearShield->setStrength(src.rearShield->getStrength());
+	name = src.name + "_copyAssignment";
+	return *this;
 }

@@ -6,16 +6,14 @@
 
 using namespace std;
 
-class Truck: public Vehicle{
+class Truck : public Vehicle {
 
-private:
-
-public: 
+public:
 	Truck();
 	~Truck();
-	
-	void changePosition(char);
-	string toString();
+
+	void changePosition(char) override;
+	string toString() override;
 
 
 };

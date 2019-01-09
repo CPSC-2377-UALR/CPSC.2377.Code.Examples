@@ -8,8 +8,6 @@ using namespace std;
 
 class Truck: public Vehicle{
 
-private:
-
 public: 
 	Truck();
 	~Truck();

@@ -1,5 +1,97 @@
 ﻿  InheritanceVehiclePlane.cpp
-c:\users\sean orme\google drive\cpsc 2377\code.examples\cpsc.2377.level.examples\l06s01.inheritancevehicle\inheritancevehicleplane.cpp(47): warning C4305: '=': truncation from 'double' to 'float'
-c:\users\sean orme\google drive\cpsc 2377\code.examples\cpsc.2377.level.examples\l06s01.inheritancevehicle\inheritancevehicleplane.cpp(48): warning C4305: 'argument': truncation from 'double' to 'float'
-  L06S01.InheritanceVehicle.vcxproj -> C:\Users\Sean Orme\Google Drive\CPSC 2377\Code.Examples\CPSC.2377.Level.Examples\Debug\L06S01.InheritanceVehiclePlane.exe
-  L06S01.InheritanceVehicle.vcxproj -> C:\Users\Sean Orme\Google Drive\CPSC 2377\Code.Examples\CPSC.2377.Level.Examples\Debug\L06S01.InheritanceVehiclePlane.pdb (Full PDB)
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(671): error C2528: 'pointer': pointer to reference is illegal
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(883): note: see reference to class template instantiation 'std::allocator<_Ty>' being compiled
+          with
+          [
+              _Ty=Vehicle &
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\vector(450): note: see reference to class template instantiation 'std::_Wrap_alloc<std::allocator<_Ty>>' being compiled
+          with
+          [
+              _Ty=Vehicle &
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\vector(502): note: see reference to class template instantiation 'std::_Vec_base_types<_Ty,_Alloc>' being compiled
+          with
+          [
+              _Ty=Vehicle &,
+              _Alloc=std::allocator<Vehicle &>
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\vector(680): note: see reference to class template instantiation 'std::_Vector_alloc<std::_Vec_base_types<_Ty,_Alloc>>' being compiled
+          with
+          [
+              _Ty=Vehicle &,
+              _Alloc=std::allocator<Vehicle &>
+          ]
+  c:\users\ormeskirk\documents\github\cpsc.2377.code.examples\l06s01.inheritancevehicle\inheritancevehicleplane.cpp(78): note: see reference to class template instantiation 'std::vector<Vehicle &,std::allocator<_Ty>>' being compiled
+          with
+          [
+              _Ty=Vehicle &
+          ]
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(672): error C2528: 'const_pointer': pointer to reference is illegal
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(695): error C2535: 'Vehicle &(*std::allocator<_Ty>::address(Vehicle &) noexcept const)': member function already defined or declared
+          with
+          [
+              _Ty=Vehicle &
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(689): note: see declaration of 'std::allocator<_Ty>::address'
+          with
+          [
+              _Ty=Vehicle &
+          ]
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(816): error C2528: 'pointer': pointer to reference is illegal
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(887): note: see reference to class template instantiation 'std::allocator_traits<_Alloc>' being compiled
+          with
+          [
+              _Alloc=std::allocator<Vehicle &>
+          ]
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(817): error C2528: 'const_pointer': pointer to reference is illegal
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(836): error C2528: '<template-parameter>': pointer to reference is illegal
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(842): error C2528: '<template-parameter>': pointer to reference is illegal
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(930): error C2535: 'Vehicle &(*std::_Wrap_alloc<std::allocator<_Ty>>::address(Vehicle &) const)': member function already defined or declared
+          with
+          [
+              _Ty=Vehicle &
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(924): note: see declaration of 'std::_Wrap_alloc<std::allocator<_Ty>>::address'
+          with
+          [
+              _Ty=Vehicle &
+          ]
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(158): error C2528: 'abstract declarator': pointer to reference is illegal
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\vector(453): note: see reference to class template instantiation 'std::_Is_simple_alloc<std::_Wrap_alloc<std::allocator<_Ty>>>' being compiled
+          with
+          [
+              _Ty=Vehicle &
+          ]
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(158): error C2528: '<template-parameter>': pointer to reference is illegal
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(160): error C2528: 'abstract declarator': pointer to reference is illegal
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(160): error C2528: '<template-parameter>': pointer to reference is illegal
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\vector(461): error C2528: '<template-parameter>': pointer to reference is illegal
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(175): error C2528: 'pointer': pointer to reference is illegal
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\vector(506): note: see reference to class template instantiation 'std::_Simple_types<Vehicle &>' being compiled
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(176): error C2528: 'const_pointer': pointer to reference is illegal
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\vector(826): error C2528: '_Pval': pointer to reference is illegal
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\vector(1246): error C2528: 'data': pointer to reference is illegal
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\vector(1251): error C2528: 'data': pointer to reference is illegal
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\vector(1276): error C2535: 'void std::vector<Vehicle &,std::allocator<_Ty>>::push_back(Vehicle &)': member function already defined or declared
+          with
+          [
+              _Ty=Vehicle &
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\vector(895): note: see declaration of 'std::vector<Vehicle &,std::allocator<_Ty>>::push_back'
+          with
+          [
+              _Ty=Vehicle &
+          ]
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\vector(1359): error C2535: 'std::_Vector_iterator<std::_Vector_val<std::_Simple_types<Vehicle &>>> std::vector<Vehicle &,std::allocator<_Ty>>::insert(std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<Vehicle &>>>,_Ty)': member function already defined or declared
+          with
+          [
+              _Ty=Vehicle &
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\vector(918): note: see declaration of 'std::vector<Vehicle &,std::allocator<_Ty>>::insert'
+          with
+          [
+              _Ty=Vehicle &
+          ]
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\vector(1595): error C2528: '_Ptr': pointer to reference is illegal
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\vector(1757): error C2528: '_Pval': pointer to reference is illegal
