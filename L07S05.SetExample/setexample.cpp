@@ -38,17 +38,17 @@ void main(){
 	}cout << endl;
 
 	/////*** NUMERICAL VERSION ***/
-	set<int> s;
-	//cout << "Insert c, s, and p." << endl;
-	s.insert(45);
-	s.insert(-5);
-	s.insert(1);
+	//set<int> s;
+	////cout << "Insert c, s, and p." << endl;
+	//s.insert(45);
+	//s.insert(-5);
+	//s.insert(1);
 
-	cout << "Set contents: ";
-	set<int>::iterator p;
-	for(p=s.begin();p!=s.end();p++){
-		cout << *p << " ";
-	}cout << endl;
+	//cout << "Set contents: ";
+	//set<int>::iterator p;
+	//for(p=s.begin();p!=s.end();p++){
+	//	cout << *p << " ";
+	//}cout << endl;
 
 
 

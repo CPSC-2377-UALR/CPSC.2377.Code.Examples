@@ -24,13 +24,21 @@ float addTwoNumbers(float a, float b){
 	return(a+b);
 }
 
-template<class A, class B>
-A addTwoNumbers(A a, B b){
+template<class A, class B, class Cow>
+A addTwoNumbers(A a, B b, Cow c){
 	cout << "template version:" << endl;
-	return(a+b);
+	return(a+b+c);
 }
 
-
+class Couch {
+public:
+	int numLegs{ 4 };
+	template<class T>
+	friend T operator + (const T & a, const Couch& b)
+	{
+		return a + b.numLegs;
+	}
+};
 ///*
 // * Below is the Programming 2 approach (use function templates that
 // * can adapt to any types for which the '+' operator is overloaded)
@@ -46,13 +54,13 @@ A addTwoNumbers(A a, B b){
  * Simple class to show that templates work for user-defined types
  * for which the + operator is overloaded.
  */
-class Spaceship{
-public:
-	int x;
-	Spaceship(int _x){x = _x;}
-};
-
-Spaceship operator +(Spaceship& a, Spaceship & b){return(Spaceship(a.x+b.x));}
+//class Spaceship{
+//public:
+//	int x;
+//	Spaceship(int _x){x = _x;}
+//};
+//
+//Spaceship operator +(Spaceship& a, Spaceship & b){return(Spaceship(a.x+b.x));}
 
 void main(){
 
@@ -62,7 +70,9 @@ void main(){
 	 */
 	int x1 = 1, y1 = 2;
 	float x2=1.0, y2=2.2;
-	cout << addTwoNumbers(x2,y1) << endl;
+	Couch myCouch;
+	auto returnValue = addTwoNumbers(x2, y1, myCouch);
+	cout << returnValue << endl;
 
 	/*
 	 * Lesson 2: Play around with the location of x3 and y3 in the
@@ -75,9 +85,9 @@ void main(){
 	/////*
 	//// * Lesson 3: Observe the generalizing power of templates
 	//// */
-	Spaceship a(2);
+	/*Spaceship a(2);
 	Spaceship b(3);
-	cout << addTwoNumbers(a,b).x << endl;
+	cout << addTwoNumbers(a,b).x << endl;*/
 
 	system("PAUSE");
 

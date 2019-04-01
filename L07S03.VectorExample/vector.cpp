@@ -16,12 +16,12 @@ void main(){
 	/*
 	* Lesson 1: Vectors are templated
 	*/
-	list<int> v;
+	vector<int> v;
 
 	v.push_back(10);
 	v.push_back(5);
 	cout << "output v contents" << endl;
-
+	
 	for(int i=0;i<v.size();i++){
 		cout << v[i] << endl;
 	}

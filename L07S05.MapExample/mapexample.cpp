@@ -30,8 +30,8 @@ void main(){
 	 *           for iterators
 	*/ 
 	for(miter = m.begin(); miter != m.end(); miter++){
-		cout << miter->first << ", " << miter->second << endl;
-		//cout << (*miter).first << ", " << (*miter).second << endl;
+		//cout << miter->first << ", " << miter->second << endl;
+		cout << (*miter).first << ", " << (*miter).second << endl;
 	}
 	system("PAUSE");
 
@@ -41,7 +41,7 @@ void main(){
 	cout << "Searching for int: " << endl;
 	if(m.find("int") != m.end()){
 		cout << "int is in the map." << endl;
-		cout << (m.find("int"))->second << endl;
+		cout << (*(m.find("int"))).second << endl;
 	}else{
 		cout << "int is not in the map." << endl;
 	}

@@ -27,7 +27,7 @@ public:
 	
 	/* Lesson 3: Polymorphism via dynamic binding*/
 	virtual string toString();
-	virtual void changePosition(char);
+	virtual void changePosition(char)=0;
 
 	//string toString();
 	//void changePosition(char);

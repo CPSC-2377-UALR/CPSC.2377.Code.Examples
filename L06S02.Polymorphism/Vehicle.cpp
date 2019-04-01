@@ -15,7 +15,7 @@ Vehicle::Vehicle(){
 }
 
 Vehicle::~Vehicle(){
-	delete name;
+	//delete name;
 }
 
 void Vehicle::setX(float pX){

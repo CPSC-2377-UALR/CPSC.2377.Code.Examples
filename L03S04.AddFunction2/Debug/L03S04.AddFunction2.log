@@ -1,3 +1,4 @@
-﻿  addfunction2.cpp
-addfunction2.obj : error LNK2019: unresolved external symbol "int __cdecl addTwoNumbers(int,int)" (?addTwoNumbers@@YAHHH@Z) referenced in function _main
-C:\Users\Sean Orme\Google Drive\CPSC 2377\Code.Examples\CPSC.2377.Level.Examples\Debug\L03S04.AddFunction2.exe : fatal error LNK1120: 1 unresolved externals
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (L03S04.AddFunction2.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  addfunction2.cpp
+  L03S04.AddFunction2.vcxproj -> C:\Users\Sean Orme\Documents\GitHub\CPSC.2377.Code.Examples\Debug\L02S02.1.Functions.Separate.Declaration.exe
+  L03S04.AddFunction2.vcxproj -> C:\Users\Sean Orme\Documents\GitHub\CPSC.2377.Code.Examples\Debug\L02S02.1.Functions.Separate.Declaration.pdb (Full PDB)

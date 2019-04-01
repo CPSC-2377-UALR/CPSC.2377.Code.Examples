@@ -15,12 +15,13 @@ int main() {
 		3. Distribution
 	*/
 	const int MAX_VALUE = 50;
-	random_device seed;	
+	random_device seed;
 	default_random_engine e(seed());
 	//default_random_engine e(13);
-	//uniform_int_distribution<int> ud(1, MAX_VALUE-1);
-	//normal_distribution<double> nd(25.0,2.0); //(mean, standard deviation)
-	bernoulli_distribution bd(.5);
+	//uniform_int_distribution<int> ud(0, MAX_VALUE-1);
+	//normal_distribution<double> nd(30.0,1.0); //(mean, standard deviation)
+	bernoulli_distribution bd(.75);
+	
 	int distribution[MAX_VALUE] = { 0 };
 	for (int i = 0; i < 10000; i++)
 	{

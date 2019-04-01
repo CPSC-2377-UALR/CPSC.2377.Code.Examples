@@ -1,3 +1,4 @@
-﻿  addfunction.cpp
-  L03S04.AddFunction.vcxproj -> C:\Users\Sean Orme\Google Drive\CPSC 2377\Code.Examples\CPSC.2377.Level.Examples\Debug\L03S04.AddFunction.exe
-  L03S04.AddFunction.vcxproj -> C:\Users\Sean Orme\Google Drive\CPSC 2377\Code.Examples\CPSC.2377.Level.Examples\Debug\L03S04.AddFunction.pdb (Full PDB)
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (L03S04.AddFunction.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  addfunction.cpp
+  L03S04.AddFunction.vcxproj -> C:\Users\Sean Orme\Documents\GitHub\CPSC.2377.Code.Examples\Debug\L02S02.1.Functions.Basics.exe
+  L03S04.AddFunction.vcxproj -> C:\Users\Sean Orme\Documents\GitHub\CPSC.2377.Code.Examples\Debug\L02S02.1.Functions.Basics.pdb (Full PDB)

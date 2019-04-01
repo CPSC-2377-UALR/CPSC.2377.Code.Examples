@@ -10,31 +10,35 @@
 #include "Plane.h"
 
 using namespace std;
+void doCommand(Vehicle & v);
 
 int main(){
 
 	int numSteps = 10;
-
-	Vehicle* v = new Plane;
-
+	Plane p;
+	Vehicle v = p;
+	
 	//Wrong!!! The Vehicle's toString() method is called
-	cout << v->toString() << endl;
+	cout << v.toString() << endl;
 
 	system("PAUSE");
-	for(int i=0;i<numSteps;i++){
-		
-		char command;
-		cout << "Input a command: ";
-		cin >> command;
-
-		//Wrong!!! The Vehicle's changePosition() method is called
-		v->changePosition(command);
-
-		cout << v->toString() << endl;
-
+	for(int i=0;i<numSteps;i++)
+	{
+		doCommand(v);
 	}
 	
 	return 0;
 
+}
+void doCommand(Vehicle & v)
+{
+	char command;
+	cout << "Input a command: ";
+	cin >> command;
+
+	//Wrong!!! The Vehicle's changePosition() method is called
+	v.changePosition(command);
+
+	cout << v.toString() << endl;
 }
 

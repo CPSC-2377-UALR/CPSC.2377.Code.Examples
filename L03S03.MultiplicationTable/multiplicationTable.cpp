@@ -6,6 +6,7 @@
 #include <iostream>
 #include <iomanip>
 using namespace std;
+
 void printTable(int table[][4],int rows, int cols)
 {
 	for (int i = 0; i<rows; i++) {

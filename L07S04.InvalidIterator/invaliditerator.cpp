@@ -7,56 +7,54 @@
 */
 #include<iostream>
 #include<vector>
+#include<list>
 
 using namespace std;
 
-//Simple class on which to test
-class SpaceShip{
-public:
-	SpaceShip(int value){
-		this->value = value;
-	}
-	int getValue(){return(value);}
-private:
+//Simple struct on which to test
+struct SpaceShip{
 	int value;
 };
 
 int main(){
-
+	
 	//Populate a vector of objects
 	int N = 11;
-	vector<SpaceShip*> v;
-	vector<SpaceShip*>::iterator viter;
+	list<SpaceShip> v;
+	//vector<SpaceShip>::iterator viter;
+	auto viter = v.begin();
 	for(int i=0;i<N;i++){
-		v.push_back(new SpaceShip(i));
+		SpaceShip SSS;
+		SSS.value = i;
+		v.push_back(SSS);
 	}
 
 	for(viter=v.begin();viter!=v.end();viter++){
-		cout << (*viter)->getValue() << endl;
+		cout << (*viter).value << endl;
 	}
 
 	cout << "Start Erasing" << endl;
 	/////*
 	//// * Lesson 1: Dynamic deletion w/ iterators causes an ERROR!!!
 	//// */
-	/*for(viter=v.begin();viter!=v.end();viter++){
-		cout << (*viter)->getValue();
-		if( (*viter)->getValue()%2==0){
-			viter = v.erase(viter);
-			cout << ": ERASE" << endl;
-		}else{
-			cout << endl;
-		}
-	}
-*/
+	//for(viter=v.begin();viter!=v.end();viter++){
+	//	cout << (*viter).value;
+	//	if( (*viter).value%2==0){
+	//		viter = v.erase(viter);
+	//		cout << ": ERASE" << endl;
+	//	}else{
+	//		cout << endl;
+	//	}
+	//}
+
 
 	/*
 	 * Lesson 2: The problem can be fixed with the set-up given below.
 	 *           Comment out the code above and uncomment the code below to test
 	 */
 	for(viter=v.begin();viter!=v.end(); /*empty*/){
-		cout << (*viter)->getValue();
-		if( (*viter)->getValue()%2==0){
+		cout << (*viter).value;
+		if( (*viter).value%2==0){
 			viter = v.erase(viter);
 			cout << ": ERASE" << endl;
 		}else{
@@ -69,12 +67,13 @@ int main(){
 	 *Lesson 3: Using "Auto"
 	 */
 
-	for (auto ship : v)
+	for (auto & ship : v)
 	{
-		cout << ship->getValue();
-		if( ship -> getValue()%2==0){
-			ship = v.erase(ship);
+		cout << ship.value;
+		if (ship.value % 2 == 0) {
+			//ship = v.erase(ship);
 			cout << ": ERASE" << endl;
+		}
 	}
 
 

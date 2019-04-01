@@ -1,3 +1,4 @@
-﻿  readinput.cpp
-  L03S08.ReadInput.vcxproj -> C:\Users\Sean Orme\Google Drive\CPSC 2377\Code.Examples\CPSC.2377.Level.Examples\Debug\L03S08.ReadInput.exe
-  L03S08.ReadInput.vcxproj -> C:\Users\Sean Orme\Google Drive\CPSC 2377\Code.Examples\CPSC.2377.Level.Examples\Debug\L03S08.ReadInput.pdb (Full PDB)
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (L03S08.ReadInput.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  readinput.cpp
+  L03S08.ReadInput.vcxproj -> C:\Users\Sean Orme\Documents\GitHub\CPSC.2377.Code.Examples\Debug\L02S01.3.File.Input.exe
+  L03S08.ReadInput.vcxproj -> C:\Users\Sean Orme\Documents\GitHub\CPSC.2377.Code.Examples\Debug\L02S01.3.File.Input.pdb (Full PDB)

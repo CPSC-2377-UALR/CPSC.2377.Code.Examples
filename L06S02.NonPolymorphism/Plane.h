@@ -8,7 +8,7 @@ using namespace std;
 
 class Plane: public Vehicle{
 
-private:
+public:
 	float z;
 
 public: 

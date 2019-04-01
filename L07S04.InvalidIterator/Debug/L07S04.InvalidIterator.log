@@ -1,3 +1,4 @@
-﻿  invaliditerator.cpp
-  L07S04.InvalidIterator.vcxproj -> C:\Users\star\Google Drive\Teaching\CPSC 2377\Code.Examples\CPSC.2377.Level.Examples\Debug\L07S04.InvalidIterator.exe
-  L07S04.InvalidIterator.vcxproj -> C:\Users\star\Google Drive\Teaching\CPSC 2377\Code.Examples\CPSC.2377.Level.Examples\Debug\L07S04.InvalidIterator.pdb (Full PDB)
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (L07S04.InvalidIterator.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  invaliditerator.cpp
+  L07S04.InvalidIterator.vcxproj -> C:\Users\Sean Orme\Documents\GitHub\CPSC.2377.Code.Examples\Debug\L03S01.4.STL.Iterators.InvalidIterator.exe
+  L07S04.InvalidIterator.vcxproj -> C:\Users\Sean Orme\Documents\GitHub\CPSC.2377.Code.Examples\Debug\L03S01.4.STL.Iterators.InvalidIterator.pdb (Full PDB)
