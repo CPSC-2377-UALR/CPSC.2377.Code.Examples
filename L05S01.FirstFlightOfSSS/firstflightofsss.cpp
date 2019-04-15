@@ -30,7 +30,7 @@ int main(){
 
 	SimpleSpaceShip* sssPtr;
 	sssPtr = new SimpleSpaceShip;
-	(*sssPtr).setName("PtrShip");
+	sssPtr->setName("PtrShip");
 	sssPtr->print();
 	
 	SimpleSpaceShip** fleet;

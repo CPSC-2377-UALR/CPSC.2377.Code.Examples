@@ -10,7 +10,7 @@ using namespace std;
 SimpleSpaceShip::SimpleSpaceShip(){
 	x = 0.0;
 	y = 0.0;
-	name = NULL;
+	name = nullptr;
 	setName("Enterprise");
 }
 
@@ -38,7 +38,7 @@ void SimpleSpaceShip::setY(float paramY){
 }
 
 void SimpleSpaceShip::setName(char* paramName){
-	if(name!=NULL){
+	if(name!=nullptr){
 		delete [] name;
 	}
 	name = new char[strlen(paramName)+1];
