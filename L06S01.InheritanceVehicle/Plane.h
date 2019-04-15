@@ -6,11 +6,13 @@
 class Plane: public Vehicle{
 
 public: 
-	float x;
-	float z;
-
 	Plane();
 	~Plane();
+
+	float x{ 0 };
+	float z{ 0 };
+
+	
 
 };
 

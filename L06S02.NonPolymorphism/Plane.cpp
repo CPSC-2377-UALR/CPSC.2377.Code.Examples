@@ -5,8 +5,7 @@
 using namespace std;
 
 Plane::Plane(){ /*Default Constructor of Vehicle is called*/
-	setX(2.0);
-	setY(2.1);
+	setPosition({ 2.0f, 2.1f });
 	setName("Plane");
 	z = 2.2;
 }

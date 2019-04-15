@@ -4,33 +4,33 @@
 
 using namespace std;
 
-Vehicle::Vehicle(){
-	cout << "Vehicle constructor" << endl;
-	x = 1.0;
-	y = 1.1;
-	name = new char[8];
-	strcpy_s(name,8,"Vehicle");
+Vehicle::Vehicle():x(1.1f), y(1.1f), name("Vehicle")
+{
+	cout << "Vehicle constructor" << endl;	
 }
 
-Vehicle::~Vehicle(){
+Vehicle::~Vehicle()
+{
 	cout << "Vehicle destructor" << endl;
-	delete name;
-	system("PAUSE");
 }
 
-void Vehicle::setX(float pX){
-	x = pX;
+void Vehicle::setX(float x)
+{
+	this->x = x;
 }
 
-void Vehicle::setY(float pY){
-	y = pY;
+void Vehicle::setY(float y)
+{
+	this->y = y;
 }
 
-float Vehicle::getX(){
+float Vehicle::getX() const
+{
 	return(x);
 }
 	
-float Vehicle::getY(){
+float Vehicle::getY() const
+{
 	return(y);
 }
 

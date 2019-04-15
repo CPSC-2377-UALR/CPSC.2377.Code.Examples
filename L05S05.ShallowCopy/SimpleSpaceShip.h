@@ -1,30 +1,54 @@
-/*
- * File: SimpleSpaceShip.h
- * Author: Keith Bush (2012)
- */
+
 #ifndef SIMPLESPACESHIP_H
 #define SIMPLESPACESHIP_H
 
-class SimpleSpaceShip{
+#include <string> //<-- always put <> includes BEFORE "xxx.h" includes!!!!
+
+#include "Shield.h"
+struct Coordinates
+{
+	Coordinates(float x, float y) :x{ x }, y{ y }{}
+	float x{ 0.0f };
+	float y{ 0.0f };
+};
+class SimpleSpaceShip {
 
 public:
 
-	SimpleSpaceShip();							//default constructor
-	SimpleSpaceShip(float,float,int);			//conversion constructor
+	SimpleSpaceShip();				//default constructor
+	SimpleSpaceShip(Coordinates position, int fuel, int frontShield, int rearShield, std::string name);   //conversion constructor
 	SimpleSpaceShip(const SimpleSpaceShip &);	//copy constructor
+	SimpleSpaceShip(SimpleSpaceShip &&);
 	~SimpleSpaceShip();				//destructor
-	float getX() const;				//accessor method
-	float getY() const;				//accessor method
-	void setX(float);				//accessor method
-	void setY(float);				//accessor method
-	void setName(char*);			//accessor method
-	void print() const;				//I/O method
 
-private: 
+	Coordinates getPosition() const;		//accessor method
+	int getFrontShieldStrength()const;
+	int getRearShieldStrength()const;
 
-	float x,y;    //data member
-	char* name;   //data member
-	int fuel;
+	void setPosition(Coordinates position);		//accessor method	
+	void setName(std::string);	//accessor method
+	void setFrontShieldStrength(int strength);
+	void setRearShiledStrength(int strength);
+
+	void print() const;		//I/O method
+
+	int fuel{ 0 };     //data member 
+
+	SimpleSpaceShip & operator=(const SimpleSpaceShip & src);
+
+private:
+	Coordinates position{ 0.0f, 0.0f };
+	std::string name{ "Enterprise" };   //data member
+	Shield* frontShield{ 0 }; //data member 
+	Shield* rearShield{ 0 }; //data member
+
+
+
+
+
+
+
+
 };
 
 #endif

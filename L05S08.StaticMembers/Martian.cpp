@@ -7,23 +7,34 @@ using namespace std;
 int Martian::population = 0;
 const int Martian::speedOfLight = 29980000; 
 
-
-Martian::Martian(){
+Martian::Martian()
+{
 	population++;
 }
 
-Martian::~Martian(){
+Martian::Martian(const Martian & src)
+{
+	population++;
+}
+
+Martian::~Martian()
+{
 	population--;
 }
 
-int Martian::getPopulation(){
+int Martian::getPopulation() const
+{
 	return(population);
 }
 
-int Martian::getSOL(){
+int Martian::getSOL() const
+{
 	return(speedOfLight);
 }
 
-int Martian::getPopulationStatic(){
+
+
+int Martian::getPopulationStatic()
+{
 	return(population);
 }

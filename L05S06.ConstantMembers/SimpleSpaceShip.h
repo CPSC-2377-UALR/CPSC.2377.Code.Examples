@@ -1,30 +1,45 @@
-/*
- * File: SimpleSpaceShip.h
- * Author: Keith Bush (2012)
- */
+
 #ifndef SIMPLESPACESHIP_H
 #define SIMPLESPACESHIP_H
 
-class SimpleSpaceShip{
+#include <string>
+struct Coordinates
+{
+	float x{ 0.0f };
+	float y{ 0.0f };
+};
+class SimpleSpaceShip {
 
 public:
 
 	SimpleSpaceShip();				//default constructor
-	SimpleSpaceShip(float,float,int,int);   //conversion constructor
+	SimpleSpaceShip(Coordinates position, int fuel, int shield, std::string name);   //conversion constructor
+	SimpleSpaceShip(const SimpleSpaceShip &);	//copy constructor
+	SimpleSpaceShip(SimpleSpaceShip &&);
 	~SimpleSpaceShip();				//destructor
-	float getX() const;				//accessor method
-	float getY() const;				//accessor method
-	float getShield() const;        //accessor method
-	void setX(float);				//accessor method
-	void setY(float);				//accessor method
-	void setName(char*);			//accessor method
-	void print() const;				//I/O method
 
-private: 
-	float x,y;       //data member
-	char* name;      //data member
-	int fuel;        //data member
-	const int shield; //data member 
+	Coordinates getPosition() const;		//accessor method
+	int getShieldStrength()const;
+
+	void setPosition(Coordinates position);		//accessor method	
+	void setName(std::string);	//accessor method
+	
+	void print() const;		//I/O method
+
+	int fuel{ 0 };     //data member 
+
+	SimpleSpaceShip & operator=(const SimpleSpaceShip & src);
+
+private:
+	Coordinates position{ 0.0f, 0.0f };
+	std::string name{ "Enterprise" };   //data member
+	const int shield{ 0 };
+
+
+
+
+
+
 
 
 };

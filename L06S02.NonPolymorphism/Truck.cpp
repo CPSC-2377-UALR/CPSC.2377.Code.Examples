@@ -4,10 +4,10 @@
 
 using namespace std;
 
-Truck::Truck(){ /*Default Constructor of Vehicle is called*/
-	setX(-3.0);
-	setY(-3.1);
-	setName("Truck");
+Truck::Truck()
+{ /*Default Constructor of Vehicle is called*/
+	this->position = { -3.0f, -3.1f };
+	this->name = "Truck";
 
 }
 
@@ -27,16 +27,16 @@ void Truck::changePosition(char command){
 
 	switch(command){
 	case 'l':
-		setX(getX()-2);
+		setPosition({ getPosition().x - 2, getPosition().y });
 		break;
 	case 'r':
-		setX(getX()+3);
+		setPosition({ getPosition().x + 3, getPosition().y });
 		break;
 	case 'f':
-		setY(getY()+4);
+		setPosition({ getPosition().x, getPosition().y + 4 });
 		break;
 	case 'b':
-		setY(getY()-5);
+		setPosition({ getPosition().x, getPosition().y - 5 });
 		break;
 	default:
 		break;

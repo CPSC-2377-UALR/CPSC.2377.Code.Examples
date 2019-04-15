@@ -2,27 +2,27 @@
 #define VEHICLE_H
 
 #include<iostream>
-#include<string>
 
 using namespace std;
 
 class Vehicle{
 
 public:
-	float x;
-	char* name;
+	float x{ 0 };
+	std::string name{ " " };
 
 	Vehicle();
 	~Vehicle();
 	void setX(float);
 	void setY(float);
-	float getX();
-	float getY();
+	float getX() const;
+	float getY() const;
 
 	friend ostream & operator <<(ostream &, const Vehicle &);
 
 private:
-	float y;
+
+	float y{ 0 };
 
 };
 

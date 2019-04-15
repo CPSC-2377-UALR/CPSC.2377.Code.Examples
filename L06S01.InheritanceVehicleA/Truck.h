@@ -6,16 +6,17 @@
 
 using namespace std;
 
-class Truck: public Vehicle{
+class Truck : public Vehicle {
 
 private:
-
-
-public: 
+	bool honk;
+public:
 	Truck();
 	~Truck();
-	void changePosition(char);
-	string toString();
+
+	virtual void changePosition(char);
+	virtual string toString();
+
 
 };
 

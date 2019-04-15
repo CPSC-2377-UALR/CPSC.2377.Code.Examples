@@ -10,9 +10,12 @@ private:
 public:
 	Martian();
 	~Martian();
-	int getPopulation();
+	int getPopulation() const;
 	static int getPopulationStatic();
-	int getSOL();
+	int getSOL() const;
+
+	Martian(const Martian & src);
+
 
 };
 

@@ -1,4 +1,4 @@
-﻿  TestStatic.cpp
-  Martian.cpp
-  Generating Code...
-  L05S08.StaticMembers.vcxproj -> D:\Google Drive\Teaching\CPSC 2377\Code.Examples\CPSC.2377.Level.Examples\Debug\L05S08.StaticMembers.exe
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (L05S08.StaticMembers.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  TestStatic.cpp
+  L05S08.StaticMembers.vcxproj -> C:\Users\ormeskirk\Documents\GitHub\CPSC.2377.Code.Examples\Debug\L04S02.3.Classes.Static.Members.exe
+  L05S08.StaticMembers.vcxproj -> C:\Users\ormeskirk\Documents\GitHub\CPSC.2377.Code.Examples\Debug\L04S02.3.Classes.Static.Members.pdb (Full PDB)

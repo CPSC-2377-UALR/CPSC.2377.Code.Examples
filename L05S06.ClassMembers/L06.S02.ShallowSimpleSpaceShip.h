@@ -6,7 +6,6 @@
 #define SHALLOWSIMPLESPACESHIP_H
 
 #include "Shield.h"
-
 class ShallowSimpleSpaceShip{
 
 public:
@@ -29,6 +28,8 @@ private:
 
 	Shield* frontShield; //data member 
 	Shield* rearShield; //data member
+
+
 
 };
 

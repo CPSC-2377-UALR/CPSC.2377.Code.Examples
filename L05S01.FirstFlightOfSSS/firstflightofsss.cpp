@@ -6,8 +6,9 @@
  *
  */
 #include <iostream>
-#include "SimpleSpaceShip.h"
+#include <vector>
 #include <string>
+#include "SimpleSpaceShip.h"
 
 using namespace std;
 
@@ -16,11 +17,8 @@ float getX();
 int main(){
 	
 	SimpleSpaceShip sss;
-	sss.print();
-	
-	
-	sss.setX(11.5);
-	sss.setY(-1.0);
+	sss.print();	
+	sss.setPosition({ 11.5, -1.0 });
 	sss.print();
 
 	SimpleSpaceShip sss2;
@@ -28,30 +26,18 @@ int main(){
 	sss2.setName("Atlantis");
 	sss2.print();
 
-	SimpleSpaceShip* sssPtr;
-	sssPtr = new SimpleSpaceShip;
-	sssPtr->setName("PtrShip");
-	sssPtr->print();
 	
-	SimpleSpaceShip** fleet;
-	fleet = new SimpleSpaceShip*[10];
-	for(int i=0; i<10;i++){
-		fleet[i] = new SimpleSpaceShip();
-		fleet[i]->setX(i);
-		char* shipName = new char[8];
-		string tempName = "ship " + to_string(i);
-		strcpy_s(shipName, strlen(tempName.c_str()) + 2, tempName.c_str());
-		fleet[i]->setName(shipName);
-		//(*fleet[i]).print();
-		fleet[i]->print();
+	vector<SimpleSpaceShip> fleet;
+	for (int i = 0; i < 10; i++)
+	{
+		SimpleSpaceShip newShip;
+		fleet.push_back(newShip);
+		fleet.back().setPosition({ i, i + 1 });
+		string shipName = "ship " + to_string(i);
+		fleet.back().setName(shipName);
+		fleet.back().print();
 	}
 	
-
-	for(int i=0;i<10;i++){
-		delete fleet[i];
-	}
-	delete [] fleet;
-
 	system("PAUSE");
 
 	return 0;

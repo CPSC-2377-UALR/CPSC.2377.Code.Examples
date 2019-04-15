@@ -1,81 +1,161 @@
 /*
- * File: SimpleSpaceShip.cpp
- * Author: Keith Bush (2012)
- */
+* File: SimpleSpaceShip.cpp
+* Author: Keith Bush (2012)
+*/
 #include <iostream>
 #include "SimpleSpaceShip.h"
 
 using namespace std;
 
-SimpleSpaceShip::SimpleSpaceShip(){
-	x = 0.0;
-	y = 0.0;
-	name = NULL;
-	setName("Enterprise");
+SimpleSpaceShip::SimpleSpaceShip()
+{
+	name += "_default";
+	cout << "Default Constructor Called, " << name << endl;
 }
 
-SimpleSpaceShip::SimpleSpaceShip(float x, float y){
-	this->x = x;
-	this->y = y;
-	name = NULL;
-	setName("Enterprise");
+SimpleSpaceShip::SimpleSpaceShip(Coordinates position, int fuel, int shield, std::string name)
+	:shield{ shield }, position{ position }, fuel{ fuel }
+{
+	this->name = name + "_conversion";
+
+	cout << "Conversion Constructor Called, " << name << endl;
 }
 
-SimpleSpaceShip::SimpleSpaceShip(const SimpleSpaceShip & src){
-	x = src.x;
-	y = src.y;
-	name = NULL;
-	setName(src.name);
+SimpleSpaceShip::SimpleSpaceShip(const SimpleSpaceShip & src) : shield{ src.shield }
+{
+	position = src.position;
+	fuel = src.fuel;
+	name = src.name + "_copy";
+
+	cout << "Copy Constructor Called, " << name << endl;
 }
 
-SimpleSpaceShip::~SimpleSpaceShip(){
-	delete [] name;
+SimpleSpaceShip::SimpleSpaceShip(SimpleSpaceShip && src) : shield{ src.shield }
+{
+	//1. release my resouces
+	position = { 0.0f, 0.0f };
+	fuel = 0;
+	name = " ";
+
+	//2. Steal resources from src.
+	position = src.position;
+	fuel = src.fuel;
+	name = src.name + "_move";
+
+	//3. kill off src resources.
+	src.position = { 0.0f, 0.0f };
+	src.fuel = 0;
+	src.name = " ";
+
+	//Move constructor becomes less trivial when we learn about pointers! stay tuned!!
+	cout << "Move Constructor Called, " << name << endl;
+
 }
 
-float SimpleSpaceShip::getX() const{
-	return(x);
+SimpleSpaceShip::~SimpleSpaceShip()
+{
+	cout << name << " is being destroyed" << endl;
 }
 
-float SimpleSpaceShip::getY() const{
-	return(y);
+Coordinates SimpleSpaceShip::getPosition() const
+{
+	return position;
 }
 
-void SimpleSpaceShip::setX(float x){
-	this->x = x;
+int SimpleSpaceShip::getShieldStrength() const
+{
+	return shield;
 }
 
-void SimpleSpaceShip::setY(float y){
-	this->y = y;
+void SimpleSpaceShip::setPosition(Coordinates position)
+{
+	this->position = position;
 }
 
-void SimpleSpaceShip::setName(char* name){
-	if(this->name!=NULL){
-		delete [] this->name;
+void SimpleSpaceShip::setName(string name)
+{
+	this->name = name;
+}
+
+SimpleSpaceShip & SimpleSpaceShip::operator=(const SimpleSpaceShip & src)
+{
+	if (this == &src)
+	{
+		return *this;
 	}
-	this->name = new char[strlen(name)+1];
-	strcpy_s(this->name,strlen(name)+1,name);
+
+	position = src.position;
+	fuel = src.fuel;
+	name = src.name + "_copyAssignment";
+	return *this;
 }
 
-
-
-ostream & operator <<(ostream & o, const SimpleSpaceShip & src){
-	o << src.name << ", Coordinate: (" << src.x << ", " << src.y << ")";
-	return(o);
+SimpleSpaceShip & SimpleSpaceShip::operator++()
+{
+	position.x++;
+	position.y++;
+	return *this;
 }
 
+SimpleSpaceShip & SimpleSpaceShip::operator--()
+{
+	position.x--;
+	position.y--;
+	return *this;
+}
 
+SimpleSpaceShip & SimpleSpaceShip::operator+=(const SimpleSpaceShip & src)
+{
+	*this = *this + src;
+	return *this;
+}
 
+SimpleSpaceShip operator+(const SimpleSpaceShip & srcL, const SimpleSpaceShip & srcR)
+{
+	return 
+	{
+		{srcL.position.x + srcR.position.x, srcL.position.y + srcR.position.y }
+		,srcL.fuel + srcR.fuel, srcL.shield + srcR.shield , srcL.name
+	};
+}
 
+SimpleSpaceShip operator-(const SimpleSpaceShip & srcL, const SimpleSpaceShip & srcR)
+{
+	return
+	{
+		{ srcL.position.x - srcR.position.x, srcL.position.y - srcR.position.y }
+		,srcL.fuel - srcR.fuel, srcL.shield - srcR.shield , srcL.name
+	};
+}
 
+std::ostream & operator<<(std::ostream & o, const SimpleSpaceShip & src)
+{
+	o << src.name << ", Position: (" << src.position.x << ", " << src.position.y << ", " << src.fuel << ")";
+	return o;
+}
 
+std::istream & operator>>(std::istream & o, SimpleSpaceShip & src)
+{
+	o >> src.position.x >> src.position.y >> src.fuel;
+	return o;
+}
 
+bool operator<(const SimpleSpaceShip & srcL, const SimpleSpaceShip & srcR)
+{
+	return srcL.position.x < srcR.position.x && srcL.position.y < srcR.position.y;
+}
 
+bool operator>(const SimpleSpaceShip & srcL, const SimpleSpaceShip & srcR)
+{
+	return srcR < srcL;
+}
 
+bool operator==(const SimpleSpaceShip & srcL, const SimpleSpaceShip & srcR)
+{
+	return srcL.position.x == srcR.position.x && srcL.position.y == srcR.position.y;
+}
 
-
-SimpleSpaceShip operator +(const SimpleSpaceShip & src1, const SimpleSpaceShip & src2){
-	SimpleSpaceShip result;
-	result.x = src1.x+src2.x;
-	result.y = src1.y+src2.y;
-	return(result);
+bool operator!=(const SimpleSpaceShip & srcL, const SimpleSpaceShip & srcR)
+{
+	return !(srcL==srcR);
 }

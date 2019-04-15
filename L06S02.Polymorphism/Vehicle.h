@@ -4,33 +4,38 @@
 #include<iostream>
 #include<string>
 
-using namespace std;
+struct Coordinate
+{
+	Coordinate(float x, float y) :x{ x }, y{ y } {}
+	float x{ 0.0f };
+	float y{ 0.0f };
+};
 
-class Vehicle{
-
-protected:
-
-	char* name;
-	float x;
-	float y;
-
+class Vehicle {
 public:
 
 	Vehicle();
 	~Vehicle();
-	void setX(float);
-	void setY(float);
-	void setName(char*);
-	float getX();
-	float getY();
-	char* getName();
-	
-	/* Lesson 3: Polymorphism via dynamic binding*/
-	virtual string toString();
-	virtual void changePosition(char)=0;
 
-	//string toString();
-	//void changePosition(char);
+	void setPosition(Coordinate position);
+	void setName(std::string name);
+
+	Coordinate getPosition() const;
+	std::string getName();
+
+	/* Lesson 3: Polymorphism via dynamic binding*/
+
+	virtual std::string toString();
+	virtual void changePosition(char);
+
+
+protected:
+	Coordinate position{ 0.0f,0.0f };
+	std::string name;
+
+
+
+
 };
 
 #endif

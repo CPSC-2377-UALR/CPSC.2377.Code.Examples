@@ -16,19 +16,16 @@ using namespace std;
 
 int main(){
 
-	int numSteps = 20;
-	int numObjects = 0;
-
-	Vehicle** objects = new Vehicle*[numSteps];
+	vector<Vehicle*> objects;
 	
 
-	objects[0] = new Plane;
-	numObjects++;
-
+	objects.push_back(new Plane);
+	
 	/*Display Plane*/
-	cout << objects[0]->toString() << endl;
+	cout << objects.back()->toString() << endl;
 	
-	for(int i=1;i<numSteps;i++){
+	while(objects.size() < 5)
+	{
 		
 		char command;
 		cout << "Input a command: ";
@@ -36,29 +33,26 @@ int main(){
 
 		switch(command){
 		case 't':
-			objects[i] = new Truck;
-			numObjects++;
+			objects.push_back(new Truck);
 			break;
 		case 'p':
-			objects[i] = new Plane;
-			numObjects++;
+			objects.push_back(new Plane);
 			break;
 		case 'b':
-			objects[i] = new Boat;
-			numObjects++;
+			objects.push_back(new Boat);
 			break;
 		}
 
 		/*Update All Objects Positions via command*/
-		for(int j=0;j<numObjects;j++){
+		for(auto object : objects){
 
-			objects[j]->changePosition(command);
+			object->changePosition(command);
 		}
 
-		/*Display Plane*/
-		for(int j=0;j<numObjects;j++){
+		
+		for(auto object: objects){
 
-			cout << objects[j]->toString() << endl;
+			cout << object->toString() << endl;
 		}
 
 	}

@@ -1,55 +1,41 @@
-/*
-* File: SimpleSpaceShip.cpp
-* Author: Keith Bush (2012)
-*/
+
 #include <iostream>
 #include "SimpleSpaceShip.h"
 
 using namespace std;
 
-SimpleSpaceShip::SimpleSpaceShip(){
-	x = 0.0;
-	y = 0.0;
-	name = nullptr;
-	setName("Enterprise");
-}
 
-SimpleSpaceShip::~SimpleSpaceShip(){
+SimpleSpaceShip::SimpleSpaceShip()
+{}
+
+SimpleSpaceShip::~SimpleSpaceShip()
+{
 	cout << name << " is being destroyed" << endl;
-	delete [] name;
 }
 
-float SimpleSpaceShip::getX() const{
-	return(x);
+Coordinates SimpleSpaceShip::getPosition() const
+{
+	return position;
 }
 
-float SimpleSpaceShip::getY() const{
-	return(y);
-}
-
-
-void SimpleSpaceShip::setX(float paramX){
-	x = paramX;
+void SimpleSpaceShip::setPosition(Coordinates position)
+{
+	this->position = position;
 }
 
 
-void SimpleSpaceShip::setY(float paramY){
-	y = paramY;
+void SimpleSpaceShip::setName( string name)
+{
+	this->name = name;
 }
 
-void SimpleSpaceShip::setName(char* paramName){
-	if(name!=nullptr){
-		delete [] name;
-	}
-	name = new char[strlen(paramName)+1];
-	strcpy_s(name,strlen(paramName)+1,paramName);
+void SimpleSpaceShip::print() const
+{		
+	cout << name << ", Position: (" << position.x << ", " << position.y << ")" << endl;
 }
 
-void SimpleSpaceShip::print() const{		
-	cout << name << ", Position: (" << x << ", " << y << ")" << endl;
-}
-
-float getX(){
-	int x = 5;
+float getX()
+{
+	//int x = 5;
 	return(x);
 }
