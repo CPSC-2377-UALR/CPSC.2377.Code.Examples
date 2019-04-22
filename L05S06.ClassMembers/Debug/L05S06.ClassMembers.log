@@ -1,11 +1,4 @@
 ﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (L05S06.ClassMembers.vcxproj, L06S02.CopyConstructor.vcxproj).  This can lead to incorrect clean and rebuild behavior.
   demoSpecialConstructors.cpp
-  L06.S02.SimpleSpaceShip.cpp
-  Generating Code...
-  Compiling...
-  L06.S02.ShallowSimpleSpaceShip.cpp
-  Generating Code...
-  Skipping... (no relevant changes detected)
-  Shield.cpp
   L05S06.ClassMembers.vcxproj -> C:\Users\Sean Orme\Documents\GitHub\CPSC.2377.Code.Examples\Debug\L06S02.SpecialConstructor.exe
   L05S06.ClassMembers.vcxproj -> C:\Users\Sean Orme\Documents\GitHub\CPSC.2377.Code.Examples\Debug\L06S02.SpecialConstructor.pdb (Full PDB)

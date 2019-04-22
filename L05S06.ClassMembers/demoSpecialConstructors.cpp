@@ -7,6 +7,7 @@
  */
 #include <iostream>
 #include "L06.S02.SimpleSpaceShip.h"
+#include "L06.S02.ShallowSimpleSpaceShip.h"
 
 using namespace std;
 
@@ -30,6 +31,13 @@ int main(){
 		SimpleSpaceShip sss1;
 		sss1.print();
 	}//destructor!
+	ShallowSimpleSpaceShip ssss1;
+	ssss1.print();
+	ShallowSimpleSpaceShip ssss2(ssss1);
+	ssss2.print();
+	ssss1.setName("George");
+	ssss1.print();
+	ssss2.print();
 
 	SimpleSpaceShip sss2(21.5,-1.0,5,20,10);
 	sss2.print();
@@ -39,6 +47,7 @@ int main(){
 	
 	//2. When passing by value
 	printMe(sss3);
+
 	//3. when returning by value!
 	SimpleSpaceShip sss4 = horizontalThrust(sss3);
 	sss4.print();
@@ -56,7 +65,7 @@ int main(){
 	sss6.print();
 	//3. Explicityly called when passed as pass-by-value paramter
 	//Move Assignment Operator called when temporary value is assigned!
-	sss5 = horizontalThrust(std::move(sss3));
+	sss5 = horizontalThrustMoveReturn(std::move(sss3));
 	sss5.print();
 	//Move assignment operator also called expicilty
 	sss5 = std::move(sss6);
