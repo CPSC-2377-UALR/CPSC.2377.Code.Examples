@@ -37,55 +37,55 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "L02S01.3.File.Input", "L03S
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "L02S01.4.File.Output", "L03S08.WriteOutput\L03S08.WriteOutput.vcxproj", "{A190000E-6740-4247-9118-50261E0658AB}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "L04S01.NotSoSimplePointer", "L04S01.NotSoSimplePointer\L04S01.NotSoSimplePointer.vcxproj", "{D5FD0F4C-CB0F-411F-859D-1367199022E1}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "L06S01.2.Pointer.To.A.Pointer", "L04S01.NotSoSimplePointer\L04S01.NotSoSimplePointer.vcxproj", "{D5FD0F4C-CB0F-411F-859D-1367199022E1}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "L04S01.Pswap", "L04S01.Pswap\L04S01.Pswap.vcxproj", "{E1C8F0C2-B14A-48C6-B504-211839B226C5}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "L06S01.3c.Pointer.Pass.By.Pointer", "L04S01.Pswap\L04S01.Pswap.vcxproj", "{E1C8F0C2-B14A-48C6-B504-211839B226C5}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "L04S01.Rswap", "L04S01.Rswap\L04S01.Rswap.vcxproj", "{BCD325B2-A4BB-4D13-BE7C-F140C9E782F3}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "L06S01.3b.Pointer.Pass.By.Reference", "L04S01.Rswap\L04S01.Rswap.vcxproj", "{BCD325B2-A4BB-4D13-BE7C-F140C9E782F3}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "L04S01.SimplePointer", "L04S01.SimplePointer\L04S01.SimplePointer.vcxproj", "{01965162-64EC-41CF-ACFA-475605FE1228}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "L06S01.1.Pointer.Introduction", "L04S01.SimplePointer\L04S01.SimplePointer.vcxproj", "{01965162-64EC-41CF-ACFA-475605FE1228}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "L04S01.Swap", "L04S01.Swap\L04S01.Swap.vcxproj", "{E9E6B2E8-0EF3-4365-8ABE-F5D3BB582688}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "L06S01.3a.Pointer.Pass.By.Value", "L04S01.Swap\L04S01.Swap.vcxproj", "{E9E6B2E8-0EF3-4365-8ABE-F5D3BB582688}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "L04S02.AllocateInFunction", "L04S02.AllocateInFunction\L04S02.AllocateInFunction.vcxproj", "{5F028EFF-BA70-48AE-B629-73B95AC1FF55}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "L06S02.3.Dynamic.Memory.AllocateInFunction", "L04S02.AllocateInFunction\L04S02.AllocateInFunction.vcxproj", "{5F028EFF-BA70-48AE-B629-73B95AC1FF55}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "L04S02.ArbitraryArray", "L04S02.ArbitraryArray\L04S02.ArbitraryArray.vcxproj", "{AEBC9986-6CFE-4CDB-8223-E23DDA7E9915}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "L06S02.4a.Dynamic.Memory.Array", "L04S02.ArbitraryArray\L04S02.ArbitraryArray.vcxproj", "{AEBC9986-6CFE-4CDB-8223-E23DDA7E9915}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "L04S02.MemoryLeak", "L04S02.MemoryLeak\L04S02.MemoryLeak.vcxproj", "{6059D633-E6AB-4BC7-8425-0BB067484A50}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "L06S02.2a.Dynamic.Memory.MemoryLeak", "L04S02.MemoryLeak\L04S02.MemoryLeak.vcxproj", "{6059D633-E6AB-4BC7-8425-0BB067484A50}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "L04S02.NoMemoryLeak", "L04S02.NoMemoryLeak\L04S02.NoMemoryLeak.vcxproj", "{4C24BAB6-5FE4-4B7F-8A26-0D7FA1DD3643}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "L06S02.2b.Dynamic.Memory.NoMemoryLeak", "L04S02.NoMemoryLeak\L04S02.NoMemoryLeak.vcxproj", "{4C24BAB6-5FE4-4B7F-8A26-0D7FA1DD3643}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "L04S02.StackAndHeap", "L04S02.StackAndHeap\L04S02.StackAndHeap.vcxproj", "{3802C626-4410-4B66-AEF6-36ADFBD1B8A6}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "L06S02.1.Dynamic.Memory.Stack.vs.Heap", "L04S02.StackAndHeap\L04S02.StackAndHeap.vcxproj", "{3802C626-4410-4B66-AEF6-36ADFBD1B8A6}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "L04S02.TwoDimensionalArray", "L04S02.TwoDimensionalArray\L04S02.TwoDimensionalArray.vcxproj", "{A78FBB13-78DF-4B58-ACE5-981200F0BE6E}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "L06S02.4b.Dynamic.Memory.TwoDimensionalArray", "L04S02.TwoDimensionalArray\L04S02.TwoDimensionalArray.vcxproj", "{A78FBB13-78DF-4B58-ACE5-981200F0BE6E}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "L04S01.2.Classes.Introduction.DefaultConstructor.Destructor", "L05S01.FirstFlightOfSSS\L05S01.FirstFlightOfSSS.vcxproj", "{4812D870-95A0-4F29-9861-16713A55A890}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "L04S01.3.Classes.Conversion.Constructor", "L05S04.SecondFlightOfSSS\L05S04.SecondFlightOfSSS.vcxproj", "{31DC993C-9512-44CD-941F-F47A164F584F}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "L05S05.ShallowCopy", "L05S05.ShallowCopy\L05S05.ShallowCopy.vcxproj", "{490E0FD1-8113-4E2E-9A26-247A46B5DB7D}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "L06S02.5.Dynamic.Memory.Pointer.Memory.and.ShallowCopy", "L05S05.ShallowCopy\L05S05.ShallowCopy.vcxproj", "{490E0FD1-8113-4E2E-9A26-247A46B5DB7D}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "L05S06.ClassMembers", "L05S06.ClassMembers\L05S06.ClassMembers.vcxproj", "{19793B23-883F-450B-96D9-8DDBA30B5999}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "L06S02.SpecialConstructor", "L05S06.ClassMembers\L05S06.ClassMembers.vcxproj", "{19793B23-883F-450B-96D9-8DDBA30B5999}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "L05S06.ConstantMembers", "L05S06.ConstantMembers\L05S06.ConstantMembers.vcxproj", "{5AAB08FD-B69C-49A9-B4BD-031F36CEDB73}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "L04S02.1.Classes.Constant.Members", "L05S06.ConstantMembers\L05S06.ConstantMembers.vcxproj", "{5AAB08FD-B69C-49A9-B4BD-031F36CEDB73}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "L05S07.OverloadedOperators", "L05S07.OverloadedOperators\L05S07.OverloadedOperators.vcxproj", "{729EDDAA-AEC0-4C74-B24B-B5A12A18F64B}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "L04S02.4.Classes.Overloaded.Operators", "L05S07.OverloadedOperators\L05S07.OverloadedOperators.vcxproj", "{729EDDAA-AEC0-4C74-B24B-B5A12A18F64B}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "L05S08.StaticMembers", "L05S08.StaticMembers\L05S08.StaticMembers.vcxproj", "{79262B96-8056-44D0-B77C-EAED94617D94}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "L04S02.3.Classes.Static.Members", "L05S08.StaticMembers\L05S08.StaticMembers.vcxproj", "{79262B96-8056-44D0-B77C-EAED94617D94}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "L06S01.InheritanceVehiclePlane", "L06S01.InheritanceVehicle\L06S01.InheritanceVehicle.vcxproj", "{6049192C-4801-4A83-9A94-C906D49BB68C}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "L05S01.1.Inheritance.Introduction", "L06S01.InheritanceVehicle\L06S01.InheritanceVehicle.vcxproj", "{6049192C-4801-4A83-9A94-C906D49BB68C}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "L06S02.InheritanceVehiclePlaneApplied", "L06S01.InheritanceVehicleA\L06S01.InheritanceVehicleA.vcxproj", "{21A1E110-372D-4357-8C43-4D4293787F38}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "L06S02.6.Dynamic.Memory.Abstract.Classes", "L06S01.InheritanceVehicleA\L06S01.InheritanceVehicleA.vcxproj", "{21A1E110-372D-4357-8C43-4D4293787F38}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "L06S02.NonPolymorphism", "L06S02.NonPolymorphism\L06S02.NonPolymorphism.vcxproj", "{32CA979D-AB94-496B-870B-078C1B95346E}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "L05S02.1a.Inheritance.NonPolymorphism", "L06S02.NonPolymorphism\L06S02.NonPolymorphism.vcxproj", "{32CA979D-AB94-496B-870B-078C1B95346E}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "L06S02.Polymorphism", "L06S02.Polymorphism\L06S02.Polymorphism.vcxproj", "{5EB875E6-BE71-4176-8861-1DC649C96FE6}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "L05S02.1b.Inheritance.Polymorphism", "L06S02.Polymorphism\L06S02.Polymorphism.vcxproj", "{5EB875E6-BE71-4176-8861-1DC649C96FE6}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "L06S03.AbstractClassApplied", "L06S03.AbstractClassApplied\L06S03.AbstractClassApplied.vcxproj", "{B35A2684-6525-4E90-A887-B10622F6F042}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "L05S02.3.Inheritance.Abstract.Class", "L06S03.AbstractClassApplied\L06S03.AbstractClassApplied.vcxproj", "{B35A2684-6525-4E90-A887-B10622F6F042}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "L03S01.1.Templates.Function", "L07S01.FunctionTemplate\L07S01.FunctionTemplate.vcxproj", "{1EB2C8D7-0BB0-4BD1-898A-0AED8F260165}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "L07S02.ClassTemplate", "L07S02.ClassTemplate\L07S02.ClassTemplate.vcxproj", "{F84D5094-8F79-463E-8785-D410239BE053}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "L04S02.5.Classes.Templates", "L07S02.ClassTemplate\L07S02.ClassTemplate.vcxproj", "{F84D5094-8F79-463E-8785-D410239BE053}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "L03S01.2.STL.Containers.Sequential.VectorExample", "L07S03.VectorExample\L07S03.VectorExample.vcxproj", "{6B50498A-0064-429B-8BE9-68D975A7DF98}"
 EndProject
@@ -130,6 +130,10 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "L04S01.5.Classes.Move.Constructor", "L04S01.5.Classes.Move.Constructor\L04S01.5.Classes.Move.Constructor.vcxproj", "{3FE876C5-D83F-4605-BD3F-BE323EDFF50E}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "L01S02.5.Structs", "L01S02.5.Structs\L01S02.5.Structs.vcxproj", "{3AE6673B-011A-4F21-A92F-E31B217FF216}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "L07.S01.1.Strategy.Pattern", "L01.S01.1.Strategy.Pattern\L01.S01.1.Strategy.Pattern.vcxproj", "{2B7811E5-4367-4D14-8C07-6D2F2AF05EFA}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "L07.S03.1.Decorator.Pattern", "L07.S03.1.Decorator.Pattern\L07.S03.1.Decorator.Pattern.vcxproj", "{526C5BC7-29D5-4922-99F5-F6E589255ED4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -651,6 +655,22 @@ Global
 		{3AE6673B-011A-4F21-A92F-E31B217FF216}.Release|x64.Build.0 = Release|x64
 		{3AE6673B-011A-4F21-A92F-E31B217FF216}.Release|x86.ActiveCfg = Release|Win32
 		{3AE6673B-011A-4F21-A92F-E31B217FF216}.Release|x86.Build.0 = Release|Win32
+		{2B7811E5-4367-4D14-8C07-6D2F2AF05EFA}.Debug|x64.ActiveCfg = Debug|x64
+		{2B7811E5-4367-4D14-8C07-6D2F2AF05EFA}.Debug|x64.Build.0 = Debug|x64
+		{2B7811E5-4367-4D14-8C07-6D2F2AF05EFA}.Debug|x86.ActiveCfg = Debug|Win32
+		{2B7811E5-4367-4D14-8C07-6D2F2AF05EFA}.Debug|x86.Build.0 = Debug|Win32
+		{2B7811E5-4367-4D14-8C07-6D2F2AF05EFA}.Release|x64.ActiveCfg = Release|x64
+		{2B7811E5-4367-4D14-8C07-6D2F2AF05EFA}.Release|x64.Build.0 = Release|x64
+		{2B7811E5-4367-4D14-8C07-6D2F2AF05EFA}.Release|x86.ActiveCfg = Release|Win32
+		{2B7811E5-4367-4D14-8C07-6D2F2AF05EFA}.Release|x86.Build.0 = Release|Win32
+		{526C5BC7-29D5-4922-99F5-F6E589255ED4}.Debug|x64.ActiveCfg = Debug|x64
+		{526C5BC7-29D5-4922-99F5-F6E589255ED4}.Debug|x64.Build.0 = Debug|x64
+		{526C5BC7-29D5-4922-99F5-F6E589255ED4}.Debug|x86.ActiveCfg = Debug|Win32
+		{526C5BC7-29D5-4922-99F5-F6E589255ED4}.Debug|x86.Build.0 = Debug|Win32
+		{526C5BC7-29D5-4922-99F5-F6E589255ED4}.Release|x64.ActiveCfg = Release|x64
+		{526C5BC7-29D5-4922-99F5-F6E589255ED4}.Release|x64.Build.0 = Release|x64
+		{526C5BC7-29D5-4922-99F5-F6E589255ED4}.Release|x86.ActiveCfg = Release|Win32
+		{526C5BC7-29D5-4922-99F5-F6E589255ED4}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
