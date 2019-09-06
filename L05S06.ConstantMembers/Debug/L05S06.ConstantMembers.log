@@ -1,5 +1,7 @@
-﻿  SimpleSpaceShip.cpp
-d:\google drive\teaching\cpsc 2377\code.examples\cpsc.2377.level.examples\l05s06.constantmembers\simplespaceship.cpp(41): warning C4244: 'return': conversion from 'const int' to 'float', possible loss of data
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (L05S06.ConstantMembers.vcxproj).  This can lead to incorrect clean and rebuild behavior.
   demoConstantMembers.cpp
+  SimpleSpaceShip.cpp
+c:\users\sean orme\documents\github\cpsc.2377.code.examples\l05s06.constantmembers\simplespaceship.cpp(47): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
   Generating Code...
-  L05S06.ConstantMembers.vcxproj -> D:\Google Drive\Teaching\CPSC 2377\Code.Examples\CPSC.2377.Level.Examples\Debug\L05S06.ConstantMembers.exe
+  L05S06.ConstantMembers.vcxproj -> C:\Users\Sean Orme\Documents\GitHub\CPSC.2377.Code.Examples\Debug\L04S02.1.Classes.Constant.Members.exe
+  L05S06.ConstantMembers.vcxproj -> C:\Users\Sean Orme\Documents\GitHub\CPSC.2377.Code.Examples\Debug\L04S02.1.Classes.Constant.Members.pdb (Full PDB)

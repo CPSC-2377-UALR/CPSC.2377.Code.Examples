@@ -17,21 +17,21 @@ int main(){
 	int numSteps = 10;
 
 	Plane p;
-	Vehicle v = p;
+	Vehicle& v = p;
 	
 	//Wrong!!! The Vehicle's toString() method is called
 	cout << v.toString() << endl;
 
 	system("PAUSE");
-	for(int i=0;i<numSteps;i++)
+	for (int i = 0; i < numSteps; i++)
 	{
 		doCommand(v);
+	}
 
-
-	Vehicle& v = Plane();
+	Vehicle& v1 = Plane();
 
 	//Wrong!!! The Vehicle's toString() method is called
-	cout << v.toString() << endl;
+	cout << v1.toString() << endl;
 
 	
 	for (int i = 0; i < numSteps; i++)
@@ -42,9 +42,9 @@ int main(){
 		cin >> command;
 
 		//Wrong!!! The Vehicle's changePosition() method is called
-		v.changePosition(command);
+		v1.changePosition(command);
 
-		cout << v.toString() << endl;
+		cout << v1.toString() << endl;
 
 
 	}
@@ -52,6 +52,7 @@ int main(){
 	return 0;
 
 }
+
 void doCommand(Vehicle & v)
 {
 	char command;

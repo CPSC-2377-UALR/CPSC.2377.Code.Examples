@@ -11,8 +11,8 @@ using namespace std;
 void pswap(int* a, int* b){
 	//a --> x
 	//b --> y
-	a = new int;
-	*a = 5;
+	//a = new int;
+	//*a = 5;
 	int tmp = *a;
 	*a = *b;
 	*b = tmp;
@@ -21,9 +21,9 @@ void pswap(int* a, int* b){
 int main(){
 
 	int x = 5, y = 7;
-	int* v = nullptr;
+	//int* v = nullptr;
 	cout << "Before: " << x << " " << y << endl;
-	pswap(v,&y);
+	pswap(&x,&y);
 	cout << "After:  " << x << " " << y << endl;
 
 	system("PAUSE");

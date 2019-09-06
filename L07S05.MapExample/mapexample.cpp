@@ -16,8 +16,8 @@ void main(){
 
 	//declare a map 
 	map<string, string> m;
-	map<string, string>::iterator miter;
-
+	//map<string, string>::iterator miter;
+	auto miter = m.begin();
 	cout << "Insert pairs into the map." << endl;
 	m["int"] = "type integer";
 	m["char"] = "type character";

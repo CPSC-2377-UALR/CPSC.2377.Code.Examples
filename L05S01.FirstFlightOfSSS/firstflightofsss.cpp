@@ -12,7 +12,7 @@
 
 using namespace std;
 
-float getX();
+//float getX();
 
 int main(){
 	
@@ -30,9 +30,9 @@ int main(){
 	vector<SimpleSpaceShip> fleet;
 	for (int i = 0; i < 10; i++)
 	{
-		SimpleSpaceShip newShip;
-		fleet.push_back(newShip);
-		fleet.back().setPosition({ i, i + 1 });
+		
+		fleet.push_back(SimpleSpaceShip());
+		fleet.back().setPosition({ (float)i, (float)i + 1 });
 		string shipName = "ship " + to_string(i);
 		fleet.back().setName(shipName);
 		fleet.back().print();

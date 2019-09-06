@@ -11,7 +11,6 @@ class Plane: public Vehicle{
 public:
 	float z;
 
-public: 
 	Plane();
 	~Plane();
 	

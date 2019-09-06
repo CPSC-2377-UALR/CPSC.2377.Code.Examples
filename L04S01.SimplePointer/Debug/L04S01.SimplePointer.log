@@ -1,3 +1,4 @@
-﻿  simplepointer.cpp
-  L04S01.SimplePointer.vcxproj -> C:\Users\Sean Orme\Google Drive\CPSC 2377\Code.Examples\CPSC.2377.Level.Examples\Debug\L04S01.SimplePointer.exe
-  L04S01.SimplePointer.vcxproj -> C:\Users\Sean Orme\Google Drive\CPSC 2377\Code.Examples\CPSC.2377.Level.Examples\Debug\L04S01.SimplePointer.pdb (Full PDB)
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (L04S01.SimplePointer.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  simplepointer.cpp
+  L04S01.SimplePointer.vcxproj -> C:\Users\Sean Orme\Documents\GitHub\CPSC.2377.Code.Examples\Debug\L06S01.1.Pointer.Introduction.exe
+  L04S01.SimplePointer.vcxproj -> C:\Users\Sean Orme\Documents\GitHub\CPSC.2377.Code.Examples\Debug\L06S01.1.Pointer.Introduction.pdb (Full PDB)

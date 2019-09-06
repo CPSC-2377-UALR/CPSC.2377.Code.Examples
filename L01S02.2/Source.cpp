@@ -1,6 +1,10 @@
 //http://www.informit.com/articles/article.aspx?p=2755729&seqNum=3
 #include <iostream>
-
+struct Position
+{
+	float x;
+	float y;
+};
 int main()
 {
 	using namespace std;
@@ -17,6 +21,7 @@ int main()
 	cout << "Size of unsigned int: " << sizeof(unsigned int) << endl;
 	cout << "Size of float: " << sizeof(float) << endl;
 	cout << "Size of double: " << sizeof(double) << endl;
+	cout << "Size of struct with 2x floats: " << sizeof(Position) << endl;
 	cout << "The output changes with compiler, hardware and OS" << endl;
 	system("PAUSE");
 	return 0;

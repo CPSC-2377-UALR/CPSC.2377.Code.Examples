@@ -55,16 +55,17 @@ int main(){
 		
 		//Search through the base classes
 		if(baseLibrary->inventory.find(objectType) != baseLibrary->inventory.end()){
-			newObject =	((*(baseLibrary->inventory.find(objectType))).second)->create();
+			newObject =	((baseLibrary->inventory.find(objectType))->second)->create();
 		}
 
 		//Search through the mod classes
 		if(modLibrary->inventory.find(objectType)!= modLibrary->inventory.end()){
+			if (newObject != nullptr) delete newObject;
 				newObject =	((*(modLibrary->inventory.find(objectType))).second)->create();
 		}
 
 		//Load the resultant object into the game space
-		if(newObject != NULL){
+		if(newObject != nullptr){
 			objects.push_back(newObject);
 		}
 

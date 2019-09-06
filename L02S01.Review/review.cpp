@@ -60,10 +60,10 @@ int main(){
 			      * (see end of main function).
 			      */
 
-	//cout << "Enter width: "; 
-	//cin >> width;
-	//cout << "Enter height: ";
-	//cin >> height;
+	cout << "Enter width: "; 
+	cin >> width;
+	cout << "Enter height: ";
+	cin >> height;
 	
     int area=0;
     for(int i=0;i<height;++i){//i++){ 
@@ -144,8 +144,8 @@ int main(){
  *  . dot 
  *  * asterisk or star
  *  & ampersand
- *  < angle bracket (left)
- *  [ bracket (left)
+ *  <> angle bracket (left)
+ *  [ ]bracket (left)
  *  { curly bracket or brace (left)
  *  ( parenthesis (left)
  *  ... ellipsis

@@ -1,4 +1,4 @@
-﻿  firstflightofsss.cpp
-c:\users\sean orme\documents\github\cpsc.2377.code.examples\l05s01.firstflightofsss\firstflightofsss.cpp(40): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  L05S01.FirstFlightOfSSS.vcxproj -> C:\Users\Sean Orme\Documents\GitHub\CPSC.2377.Code.Examples\Debug\L05S01.FirstFlightOfSSS.exe
-  L05S01.FirstFlightOfSSS.vcxproj -> C:\Users\Sean Orme\Documents\GitHub\CPSC.2377.Code.Examples\Debug\L05S01.FirstFlightOfSSS.pdb (Full PDB)
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (L05S01.FirstFlightOfSSS.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  firstflightofsss.cpp
+  L05S01.FirstFlightOfSSS.vcxproj -> C:\Users\Sean Orme\Documents\GitHub\CPSC.2377.Code.Examples\Debug\L04S01.2.Classes.Introduction.DefaultConstructor.Destructor.exe
+  L05S01.FirstFlightOfSSS.vcxproj -> C:\Users\Sean Orme\Documents\GitHub\CPSC.2377.Code.Examples\Debug\L04S01.2.Classes.Introduction.DefaultConstructor.Destructor.pdb (Full PDB)

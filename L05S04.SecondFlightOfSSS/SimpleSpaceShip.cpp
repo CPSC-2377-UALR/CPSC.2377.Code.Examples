@@ -19,10 +19,6 @@ SimpleSpaceShip::SimpleSpaceShip(Coordinates position, int fuel) : position{ pos
 	cout << "Conversion Constructor Called, " << name << endl;
 }
 
-SimpleSpaceShip::~SimpleSpaceShip() 
-{
-	cout << name << " is being destroyed" << endl;
-}
 
 
 void SimpleSpaceShip::setName(string name)

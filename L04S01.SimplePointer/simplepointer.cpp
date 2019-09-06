@@ -8,7 +8,7 @@ int main(){
 
 	int i = 5;//i[5] @ memory address 128adb83
 	
-	int* p; //p -->
+	int* p{ nullptr }; //p -->
 	p = &i;// p --> i
 
 	cout << &i << endl; //memory address of i

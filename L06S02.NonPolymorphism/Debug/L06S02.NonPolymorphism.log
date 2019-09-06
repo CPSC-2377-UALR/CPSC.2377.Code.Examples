@@ -1,1 +1,4 @@
-﻿
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (L05S02.1.Inheritance.NonPolymorphism.vcxproj, L06S02.NonPolymorphism.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  Nonpolymorphism.cpp
+  L06S02.NonPolymorphism.vcxproj -> C:\Users\Sean Orme\Documents\GitHub\CPSC.2377.Code.Examples\Debug\L05S02.1a.Inheritance.NonPolymorphism.exe
+  L06S02.NonPolymorphism.vcxproj -> C:\Users\Sean Orme\Documents\GitHub\CPSC.2377.Code.Examples\Debug\L05S02.1a.Inheritance.NonPolymorphism.pdb (Full PDB)

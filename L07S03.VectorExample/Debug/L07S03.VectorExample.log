@@ -1,6 +1,5 @@
 ﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (L07S03.VectorExample.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  Skipping... (no relevant changes detected)
   vector.cpp
-c:\users\sean orme\documents\github\cpsc.2377.code.examples\l07s03.vectorexample\vector.cpp(25): warning C4018: '<': signed/unsigned mismatch
-c:\users\sean orme\documents\github\cpsc.2377.code.examples\l07s03.vectorexample\vector.cpp(34): warning C4018: '<': signed/unsigned mismatch
   L07S03.VectorExample.vcxproj -> C:\Users\Sean Orme\Documents\GitHub\CPSC.2377.Code.Examples\Debug\L03S01.2.STL.Containers.Sequential.VectorExample.exe
   L07S03.VectorExample.vcxproj -> C:\Users\Sean Orme\Documents\GitHub\CPSC.2377.Code.Examples\Debug\L03S01.2.STL.Containers.Sequential.VectorExample.pdb (Full PDB)

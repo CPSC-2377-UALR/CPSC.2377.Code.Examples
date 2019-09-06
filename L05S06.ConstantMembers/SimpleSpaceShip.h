@@ -5,8 +5,8 @@
 #include <string>
 struct Coordinates
 {
-	float x{ 0.0f };
-	float y{ 0.0f };
+	float x;
+	float y;
 };
 class SimpleSpaceShip {
 

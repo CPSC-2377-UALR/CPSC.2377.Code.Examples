@@ -4,15 +4,15 @@
 #include <string>
 struct Coordinates
 {
-	float x{ 0.0f };
-	float y{ 0.0f };
+	float x;
+	float y;
 };
 
 class SimpleSpaceShip{
 
 public:
 	SimpleSpaceShip();		//default constructor
-	~SimpleSpaceShip();		//destructor	
+
 	
 	Coordinates getPosition() const;		//accessor method
 	void setPosition(Coordinates position);		//accessor method	

@@ -38,13 +38,13 @@ void main(){
 	cout << p << endl;
 	cout << p.x << endl;
 
-	system("PAUSE");
+	//system("PAUSE");
 
 	/*
 	 * Lesson 2
 	 * Hidden fields can be accessed through scope resolution
 	 */
-	p.x = 3;
+	p.x = 9;
 	p.Vehicle::x = 6.7f;
 	p.setY(8.6f);
 	p.z = 9.5f;
@@ -52,7 +52,7 @@ void main(){
 	cout << v << endl;
 	cout << p << endl;
 
-	system("PAUSE");
+	//system("PAUSE");
 
 	/*
 	* Lesson 3
@@ -60,7 +60,6 @@ void main(){
 	*/
 	Vehicle& vRef = p;
 	vRef.setX(-20);
-
 	cout << vRef <<endl;
 
 	/*
@@ -75,8 +74,8 @@ void main(){
 	//Lesson 5: can't create arrays or vecotrs of references;
 
 	//Vehicle& militaryRef[10];
-	vector<Vehicle&> militaryVec;
-	militaryVec.push_back(p); //<-- compile time error! references are not copyable!
-	
+	//vector<Vehicle&> militaryVec;
+	//militaryVec.push_back(p); //<-- compile time error! references are not copyable!
+	//
 	system("PAUSE");	
 }

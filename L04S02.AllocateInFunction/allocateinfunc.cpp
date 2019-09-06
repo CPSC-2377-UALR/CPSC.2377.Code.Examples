@@ -43,6 +43,7 @@ void allocateInFunctionRef(float* & ma, int n){
 void allocateInFunctionPtr(float** ma, int n){
 	//ma --> myArray --> NULL
 	float value;
+	//ma = new float*;
 	*ma = new float[n];
 	//ma --> myArray --> [][][][][][][][]
 	for(int i=0;i<n;i++){

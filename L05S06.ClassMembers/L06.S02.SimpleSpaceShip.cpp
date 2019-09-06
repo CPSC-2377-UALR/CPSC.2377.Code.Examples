@@ -44,7 +44,7 @@ SimpleSpaceShip::SimpleSpaceShip(const SimpleSpaceShip& src)
 }
 SimpleSpaceShip & SimpleSpaceShip::operator=(const SimpleSpaceShip & src) noexcept
 {
-	cout << "Copy Assignment Constructor" << endl;
+	cout << "Copy Assignment Operator" << endl;
 	setName(src.name);
 	if (frontShield != nullptr)
 	{
@@ -78,7 +78,7 @@ SimpleSpaceShip::SimpleSpaceShip(SimpleSpaceShip && src)
 }
 SimpleSpaceShip & SimpleSpaceShip::operator=(SimpleSpaceShip && src) noexcept
 {
-	cout << "Move Assignment Constructor" << endl;
+	cout << "Move Assignment Operator" << endl;
 	setName(src.name);
 	src.name = nullptr;
 	if (frontShield != nullptr)

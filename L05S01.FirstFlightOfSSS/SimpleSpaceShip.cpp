@@ -8,10 +8,6 @@ using namespace std;
 SimpleSpaceShip::SimpleSpaceShip()
 {}
 
-SimpleSpaceShip::~SimpleSpaceShip()
-{
-	cout << name << " is being destroyed" << endl;
-}
 
 Coordinates SimpleSpaceShip::getPosition() const
 {
@@ -34,8 +30,8 @@ void SimpleSpaceShip::print() const
 	cout << name << ", Position: (" << position.x << ", " << position.y << ")" << endl;
 }
 
-float getX()
-{
-	//int x = 5;
-	return(x);
-}
+//float getX()
+//{
+//	//int x = 5;
+//	return(x);
+//}

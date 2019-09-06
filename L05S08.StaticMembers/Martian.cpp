@@ -4,8 +4,8 @@
 using namespace std;
 
 //Initialize the static members independently of the class!!!
-int Martian::population = 0;
-const int Martian::speedOfLight = 29980000; 
+int Martian::population{ 0 };
+const int Martian::speedOfLight{ 29980000 };
 
 Martian::Martian()
 {

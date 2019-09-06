@@ -9,15 +9,15 @@ using namespace std;
 
 int main(){
 
-	{
-		int sum = 0;
-		int sumTotal = 1000;
-		for (int count = 1; sum < sumTotal; count++)
-		{
-			sum += count;
-		}
+	//{
+	//	int sum = 0;
+	//	int sumTotal = 1000;
+	//	for (int count = 1; sum < sumTotal; count++)
+	//	{
+	//		sum += count;
+	//	}
 
-	}
+	//}
 	const int sumTotal = 1000;
 	int sum = 0;
 	int count = 1;

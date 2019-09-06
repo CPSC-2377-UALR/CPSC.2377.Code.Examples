@@ -26,10 +26,13 @@ int main(){
 	l = nullptr;
 	int *p = new int;
 	j = new int;
-	*l = 6;
+	*j = 3;
+	//*l = 6;
 
 	void* m;
 	m = j;
-	//cout << (int)(*m);
+	cout << *((int*)(m));
+	m = new float;
+	cout << *((float*)(m));
 	return 0;
 }

@@ -6,8 +6,8 @@
 
 struct Coordinates
 {
-	float x{ 0.0f };
-	float y{ 0.0f };
+	float x;
+	float y;
 };
 
 class SimpleSpaceShip{
@@ -15,8 +15,8 @@ class SimpleSpaceShip{
 public:
 
 	SimpleSpaceShip();				//default constructor
-	SimpleSpaceShip(Coordinates position, int name);   //conversion constructor
-	~SimpleSpaceShip();				//destructor
+	SimpleSpaceShip(Coordinates position, int fuel);   //conversion constructor
+
 	
 	Coordinates getPosition() const;		//accessor method
 	void setPosition(Coordinates position);		//accessor method	

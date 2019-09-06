@@ -1,3 +1,4 @@
-﻿  ifelse.cpp
-  L02S03.IfElse.vcxproj -> C:\Users\Sean Orme\Google Drive\CPSC 2377\Code.Examples\CPSC.2377.Level.Examples\Debug\L02S03.IfElse.exe
-  L02S03.IfElse.vcxproj -> C:\Users\Sean Orme\Google Drive\CPSC 2377\Code.Examples\CPSC.2377.Level.Examples\Debug\L02S03.IfElse.pdb (Full PDB)
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (L02S03.IfElse.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  ifelse.cpp
+  L02S03.IfElse.vcxproj -> C:\Users\Sean Orme\Documents\GitHub\CPSC.2377.Code.Examples\Debug\L01S02.6.Selection.Constructs.exe
+  L02S03.IfElse.vcxproj -> C:\Users\Sean Orme\Documents\GitHub\CPSC.2377.Code.Examples\Debug\L01S02.6.Selection.Constructs.pdb (Full PDB)

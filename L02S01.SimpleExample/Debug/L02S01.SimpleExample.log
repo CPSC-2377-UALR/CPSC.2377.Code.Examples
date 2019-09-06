@@ -1,2 +1,4 @@
-﻿  example.cpp
-  L02S01.SimpleExample.vcxproj -> C:\Users\smorme\Google Drive\CPSC 2377\Code.Examples\CPSC.2377.Level.Examples\Debug\L02S01.SimpleExample.exe
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (L02S01.SimpleExample.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  example.cpp
+  L02S01.SimpleExample.vcxproj -> C:\Users\Sean Orme\Documents\GitHub\CPSC.2377.Code.Examples\Debug\L01S01.2.Hello.World.exe
+  L02S01.SimpleExample.vcxproj -> C:\Users\Sean Orme\Documents\GitHub\CPSC.2377.Code.Examples\Debug\L01S01.2.Hello.World.pdb (Full PDB)

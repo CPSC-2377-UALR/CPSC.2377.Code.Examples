@@ -4,6 +4,7 @@
  */
 
 #include<iostream>
+#include <string>
 
 /*
  * The namespace is a mysterious part of beginner C++ programming
@@ -23,26 +24,27 @@
  * Name spaces are defined in namespace blocks. For example:
  */
 
-namespace biology{
-  
-  char plantName[5] = "iris";
-  int getID(){
-    return(1);
-  }
+namespace biology
+{  
+	std::string plantName{ "iris" };
+	int getID()
+	{
+		return(1);
+	}
 
 }
 
-namespace industry{
-  
-  char plantName[10] = "refinery";
-  int getID(){
-    return(101);
-  }
-
+namespace industry
+{  
+	std::string  plantName{ "refinery" };
+	int getID()
+	{
+		return(101);
+	}
 }
 
 using namespace std;
-using namespace industry;
+//using namespace industry;
 
 /*
  * The using directive allows a particular namespace to be applied
@@ -61,7 +63,7 @@ int main(){
    * To demonstrate the namespace functionality we will print
    * some data to the standard output stream.
    */
-  cout << industry::plantName  << endl;
+  std::cout << industry::plantName  << std::endl;
 
   /*
    * We can now alter the context of the variable name "plantName"

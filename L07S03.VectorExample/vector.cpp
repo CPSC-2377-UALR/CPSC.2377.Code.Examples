@@ -26,7 +26,6 @@ void main(){
 		cout << v[i] << endl;
 	}
 
-
 	vector<char> vchar;
 	vchar.push_back('w');
 	vchar.push_back('z');

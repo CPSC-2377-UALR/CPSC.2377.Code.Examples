@@ -21,6 +21,7 @@ void Player::update(char command)
 	{
 		cout << "All enemies defeated for " << name << "!!!!!" << endl;
 	}
+
 }
 
 void Player::attach(Enemy * enemy)

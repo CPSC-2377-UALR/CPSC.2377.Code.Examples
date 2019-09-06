@@ -33,7 +33,7 @@ int main(){
 		Martian babyMartian;
 		cout << "Pre-Push:" << martian.getPopulation() << std::endl;
 		colony.push_back(babyMartian);
-		cout << "Post-Push:"<< martian.getPopulation() << std::endl << std::endl;
+		cout << "Post-Push:"<< martian.getPopulationStatic() << std::endl << std::endl;
 	}
 
 	//Static methods are global within class scope (and don't need an instance)

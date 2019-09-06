@@ -20,7 +20,7 @@ public:
 
 	friend ostream & operator <<(ostream &, const Vehicle &);
 
-private:
+protected:
 
 	float y{ 0 };
 

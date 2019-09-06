@@ -1,4 +1,6 @@
-﻿  Source.cpp
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(387,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (L08.S03 Observer Pattern.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  Source.cpp
   Player.cpp
+  Enemy.cpp
   Generating Code...
-  L08.S03 Observer Pattern.vcxproj -> C:\Users\Sean Orme\Google Drive\CPSC 2377\Code.Examples\CPSC.2377.Level.Examples\Debug\L08.S03 Observer Pattern.exe
+  L08.S03 Observer Pattern.vcxproj -> C:\Users\Sean Orme\Documents\GitHub\CPSC.2377.Code.Examples\Debug\L07.S02.1Observer.Pattern.exe

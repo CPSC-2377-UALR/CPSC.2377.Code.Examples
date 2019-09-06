@@ -1,3 +1,4 @@
 ﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (L07S05.MapExample.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  mapexample.cpp
   L07S05.MapExample.vcxproj -> C:\Users\Sean Orme\Documents\GitHub\CPSC.2377.Code.Examples\Debug\L03S01.3.STL.Containers.Associative.MapExample.exe
   L07S05.MapExample.vcxproj -> C:\Users\Sean Orme\Documents\GitHub\CPSC.2377.Code.Examples\Debug\L03S01.3.STL.Containers.Associative.MapExample.pdb (Full PDB)

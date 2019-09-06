@@ -1,3 +1,4 @@
-﻿  forloop.cpp
-  L02S04.ForLoop.vcxproj -> C:\Users\Sean Orme\Google Drive\CPSC 2377\Code.Examples\CPSC.2377.Level.Examples\Debug\L02S04.ForLoop.exe
-  L02S04.ForLoop.vcxproj -> C:\Users\Sean Orme\Google Drive\CPSC 2377\Code.Examples\CPSC.2377.Level.Examples\Debug\L02S04.ForLoop.pdb (Full PDB)
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (L02S04.ForLoop.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  forloop.cpp
+  L02S04.ForLoop.vcxproj -> C:\Users\Sean Orme\Documents\GitHub\CPSC.2377.Code.Examples\Debug\L01S02.7a.ForLoop.exe
+  L02S04.ForLoop.vcxproj -> C:\Users\Sean Orme\Documents\GitHub\CPSC.2377.Code.Examples\Debug\L01S02.7a.ForLoop.pdb (Full PDB)

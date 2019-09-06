@@ -15,14 +15,14 @@ int main(){
 	*/
 	int numTimes = 0;
 	cin >> numTimes;
-	for(int i=0; i<=numTimes; i++)
+	for(int i=0; i<numTimes; i++)
 	{
 		
 		cout << i << endl;
 	}
 	
 	int i = 0;
-	while (i <= 5)
+	while (i <= numTimes)
 	{
 		cout << i << endl;
 		i++;

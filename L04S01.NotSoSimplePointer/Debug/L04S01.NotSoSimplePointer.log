@@ -1,2 +1,5 @@
-﻿  L04S01.NotSoSimplePointer.vcxproj -> C:\Users\Sean Orme\Documents\GitHub\CPSC.2377.Code.Examples\Debug\L04S01.NotSoSimplePointer.exe
-  L04S01.NotSoSimplePointer.vcxproj -> C:\Users\Sean Orme\Documents\GitHub\CPSC.2377.Code.Examples\Debug\L04S01.NotSoSimplePointer.pdb (Full PDB)
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (L04S01.NotSoSimplePointer.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  Skipping... (no relevant changes detected)
+  notsosimplepointer.cpp
+  L04S01.NotSoSimplePointer.vcxproj -> C:\Users\Sean Orme\Documents\GitHub\CPSC.2377.Code.Examples\Debug\L06S01.2.Pointer.To.A.Pointer.exe
+  L04S01.NotSoSimplePointer.vcxproj -> C:\Users\Sean Orme\Documents\GitHub\CPSC.2377.Code.Examples\Debug\L06S01.2.Pointer.To.A.Pointer.pdb (Full PDB)

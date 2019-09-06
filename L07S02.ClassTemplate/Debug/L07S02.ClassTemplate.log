@@ -1,4 +1,9 @@
-﻿  classtemplates.cpp
-c:\users\sean orme\google drive\cpsc 2377\code.examples\cpsc.2377.level.examples\l07s02.classtemplate\classtemplates.cpp(33): warning C4018: '<': signed/unsigned mismatch
-  L07S02.ClassTemplate.vcxproj -> C:\Users\Sean Orme\Google Drive\CPSC 2377\Code.Examples\CPSC.2377.Level.Examples\Debug\L07S02.ClassTemplate.exe
-  L07S02.ClassTemplate.vcxproj -> C:\Users\Sean Orme\Google Drive\CPSC 2377\Code.Examples\CPSC.2377.Level.Examples\Debug\L07S02.ClassTemplate.pdb (Full PDB)
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (L07S02.ClassTemplate.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+classtemplates.obj : error LNK2019: unresolved external symbol "public: __thiscall Pair<char,int>::Pair<char,int>(char,int)" (??0?$Pair@DH@@QAE@DH@Z) referenced in function _main
+classtemplates.obj : error LNK2019: unresolved external symbol "public: char __thiscall Pair<char,int>::getFirst(void)" (?getFirst@?$Pair@DH@@QAEDXZ) referenced in function _main
+classtemplates.obj : error LNK2019: unresolved external symbol "public: int __thiscall Pair<char,int>::getSecond(void)" (?getSecond@?$Pair@DH@@QAEHXZ) referenced in function _main
+classtemplates.obj : error LNK2019: unresolved external symbol "public: __thiscall Pair<int,int>::Pair<int,int>(int,int)" (??0?$Pair@HH@@QAE@HH@Z) referenced in function _main
+classtemplates.obj : error LNK2019: unresolved external symbol "public: int __thiscall Pair<int,int>::getFirst(void)" (?getFirst@?$Pair@HH@@QAEHXZ) referenced in function _main
+classtemplates.obj : error LNK2019: unresolved external symbol "public: int __thiscall Pair<int,int>::getSecond(void)" (?getSecond@?$Pair@HH@@QAEHXZ) referenced in function _main
+classtemplates.obj : error LNK2019: unresolved external symbol "public: __thiscall Pair<int,char>::Pair<int,char>(int,char)" (??0?$Pair@HD@@QAE@HD@Z) referenced in function _main
+C:\Users\Sean Orme\Documents\GitHub\CPSC.2377.Code.Examples\Debug\L04S02.5.Classes.Templates.exe : fatal error LNK1120: 7 unresolved externals

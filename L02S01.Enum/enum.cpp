@@ -9,13 +9,13 @@ int main()
 	enum class Attack { Miss, Hit, CriticalHit, NumAttacks };
 	random_device rdev;
 	default_random_engine e(rdev());
-	normal_distribution<float> nd(1, .6);
+	uniform_int_distribution<int> nd(0, 3);
 	
 	while (enemyHealth > 0)
 	{
 		cout << "The enemy still has " << enemyHealth << " health! Keep Fighting! \n";
 		Attack attackRoll = (Attack)nd(e);
-
+		
 		switch (attackRoll)
 		{
 		case Attack::Miss:

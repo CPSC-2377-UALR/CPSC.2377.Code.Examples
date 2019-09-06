@@ -1,2 +1,4 @@
-﻿  swap.cpp
-  L04S01.Swap.vcxproj -> C:\Users\Administrator\Google Drive\Teaching\CPSC 2377\Code.Examples\CPSC.2377.Level.Examples\Debug\L04S01.Swap.exe
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (L04S01.Swap.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  swap.cpp
+  L04S01.Swap.vcxproj -> C:\Users\Sean Orme\Documents\GitHub\CPSC.2377.Code.Examples\Debug\L06S01.3a.Pointer.Pass.By.Value.exe
+  L04S01.Swap.vcxproj -> C:\Users\Sean Orme\Documents\GitHub\CPSC.2377.Code.Examples\Debug\L06S01.3a.Pointer.Pass.By.Value.pdb (Full PDB)
