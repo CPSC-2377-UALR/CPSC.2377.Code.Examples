@@ -14,14 +14,15 @@ int addTwoNumbers(int num1, int num2){
 bool isItCraps(int num2Check)
 {
 	
-	if (num2Check == 7 || num2Check == 11)
+	/*if (num2Check == 7 || num2Check == 11)
 	{
 		return true;
 	}
 	else
 	{
 		return false;
-	}
+	}*/
+	return num2Check == 7 || num2Check == 11;
 	cout << "passed the if";
 }
 

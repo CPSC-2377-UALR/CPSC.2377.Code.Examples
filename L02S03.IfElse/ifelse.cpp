@@ -6,7 +6,7 @@ int main(){
 
 	int health;
 	cin >> health;
-	bool isTrue = true;
+	//bool isTrue = true;
 	/*if(health == 0)
 	{
 		cout << "Fatality!" << endl;
